@@ -1,9 +1,15 @@
 {
   "scripts": {
     "build": "npx tsc",
-    "build-watch": "npx tsc -w"
+    "build-watch": "npx tsc -w",
+    "lint": "eslint '**/*.{ts,js}'",
+    "format": "prettier --config .prettierrc {dist,src}/**/*.{js,ts} --write",
+    "reset": "rm -fr .node_modules dist package-lock.json && npm cache clean --force && npm install"
   },
   "devDependencies": {
+    "eslint": "^8.29.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-unicorn": "^45.0.1",
     "typescript": "^4.9.4"
   }
 }

@@ -1,8 +1,11 @@
 {
   "root": true,
+  "env": {
+    "browser": true
+  },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "project": "tsconfig.json"
   },
   "plugins": [
     "@typescript-eslint",
@@ -13,7 +16,8 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:unicorn/all"
+    "plugin:unicorn/all",
+    "plugin:import/recommended"
   ],
   "rules": {
     "@typescript-eslint/explicit-function-return-type": "error",
@@ -49,6 +53,9 @@
         "case": "kebabCase"
       }
     ],
-    "unicorn/no-null": "off"
+    "unicorn/no-null": "off",
+    "react/jsx-filename-extension": [
+      0
+    ]
   }
 }
