@@ -1,0 +1,34 @@
+# https://taskfile.dev
+
+version: '3'
+
+env:
+  DIST_FOLDER: dist
+
+tasks:
+  build:
+    deps: [delete-dist]
+    cmds:
+      # Transpile TypeScript files into JavaScript
+      - echo 💬 Transpiling TypeScript files...
+      - tsc
+
+      # # Bundle all file in one JavaScript file
+      # - echo 📦 Bundling files...
+      # - npx rollup $TEMP_FOLDER/main.js --file $TEMP_FOLDER/main.js --format iife
+
+      # Copy static HTML files to dist folder
+      - echo 📁 Copying static HTML files...
+      - cp -r src/public/** dist/
+
+      # Format the final code
+      - echo ✨ Formatting the final code...
+      - npm run --silent format
+
+      - echo 🎉 The project has been built! 🎉
+    silent: true
+
+  delete-dist:
+    cmds:
+      - rm -fr $DIST_FOLDER
+    silent: true
