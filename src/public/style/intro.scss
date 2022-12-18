@@ -1,0 +1,18 @@
+@use 'variables' as *;
+
+.intro {
+  font-size: 1rem;
+  h1 {
+    font-size: 2rem;
+    font-weight: $lightBoldFontWeight;
+  }
+  a.hide-intro {
+    float: right;
+    font-size: $normalFontSize;
+    font-weight: $normalFontWeight;
+    margin-top: $mediumGap;
+  }
+  p {
+    line-height: 26px;
+  }
+}

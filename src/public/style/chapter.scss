@@ -1,0 +1,12 @@
+@use 'variables' as *;
+
+.chapter {
+  margin-top: $largeGap;
+  h1 {
+    margin: 0;
+    font-family: $logoFontFamily;
+    font-size: 50px;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+  }
+}
