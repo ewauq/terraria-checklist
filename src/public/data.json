@@ -1,37 +1,81 @@
 {
-  "chapters": [
+  "sections": [
     {
-      "title": "I: Journey's Beginning"
+      "title": "I: Journey's Beginning",
+      "items": [
+        "Gather resources to build a house",
+        "Create a table, a chair, and a door for the 👨 GUIDE"
+      ]
     },
     {
-      "title": "II: The Corruption"
+      "title": "II: The Corruption",
+      "items": [
+        "👨 PAINTER: have at least 8 town NPCs",
+        "👨 GOLFER: talk to him in the Underground Desert"
+      ]
     },
     {
-      "title": "III: The Dungeon"
+      "title": "III: The Dungeon",
+      "items": [
+        "Craft a Phaseblade (15 meteorite bars and 10 gems)",
+        "Isolate the NPCs from the corruption by creating a 6-blocks wide trench around their houses"
+      ]
     },
     {
-      "title": "IV: The Hell"
+      "title": "IV: The Hell",
+      "items": [
+        "Craft an Obsidian Skull (20 obsidian) (immunizes against fire damage)",
+        "Craft some Obsidian Skin Potions (immunizes against lava damage)"
+      ]
     },
     {
-      "title": "V: The Hardmode"
+      "title": "V: The Hardmode",
+      "items": [
+        "Farm the 💀 WALL OF FLESH as many times as necessary to get the Pwnhammer and the Emblems",
+        "Destroy the altars in corrupted biomes with the Pwnhammer to spawn new ores"
+      ]
     },
     {
-      "title": "VI: Mechanical Terrors"
+      "title": "VI: Mechanical Terrors",
+      "items": [
+        "🛡️ Gear up for the boss (weapons, potions & armor)",
+        "💀 THE DESTROYER: summon the boss at night with a Mechanical Worm, then defeat it"
+      ]
     },
     {
-      "title": "VII: The Green Inferno"
+      "title": "VII: The Green Inferno",
+      "items": [
+        "Find some Life Fruits in the jungle biome and max out your HP to 500",
+        "Upgrade your gear with chlorophyte"
+      ]
     },
     {
-      "title": "VIII: The Ritual"
+      "title": "VIII: The Ritual",
+      "items": [
+        "🛡️ Gear up for the boss (weapons, potions & armor)",
+        "Find the jungle temple entrance and explore it"
+      ]
     },
     {
-      "title": "IX: The King of the oceans"
+      "title": "IX: The King of the oceans",
+      "items": [
+        "🛡️ Gear up for the bosses (weapons, potions & armor)",
+        "📅 OLD ONE'S ARMY: put an Eternia Crystal in the Eternia Crystal Stand and survive until the boss"
+      ]
     },
     {
-      "title": "X: Journey's End"
+      "title": "X: Journey's End",
+      "items": [
+        "Upgrade your gear and weapons rarity by reforging them at the 👨 GOBLIN TINKERER",
+        "🛡️ Gear up for the bosses (weapons, potions & armor)"
+      ]
     },
     {
-      "title": "Post Moon Lord"
+      "title": "Post Moon Lord",
+      "items": [
+        "Upgrade all accessories and craft a Cell Phone",
+        "Craft the mining mount Drill Containment Unit"
+      ]
     }
   ]
 }
