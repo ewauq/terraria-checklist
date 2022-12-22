@@ -3,35 +3,43 @@
     {
       "title": "I: Journey's Beginning",
       "items": [
-        "Gather resources to build a house",
-        "Create a table, a chair, and a door for the 👨 GUIDE"
+        "Gather resources to build a [[house|https://terraria.wiki.gg/wiki/House]]",
+        "Create a [[table|https://terraria.wiki.gg/wiki/Tables]], a [[chair|https://terraria.wiki.gg/wiki/Chairs]], and a [[door|https://terraria.wiki.gg/wiki/Doors]] for the {{npc|GUIDE|guide.png|https://terraria.wiki.gg/wiki/Guide}}",
+        "Gather ores to improve your equipment",
+        "Create a full set of armor with [[silver|https://terraria.fandom.com/wiki/Silver_Ore]]/[[tungsten|https://terraria.fandom.com/wiki/Tungsten_Ore]]",
+        "Explore caverns, find some [[Life Crystals|https://terraria.fandom.com/wiki/Life_Crystal]], and consume a maximum of 4 of them",
+        "Collect some [[Fallen Stars|https://terraria.fandom.com/wiki/Fallen_Star]] to craft some [[Mana Crystals|https://terraria.fandom.com/wiki/Mana_Crystal]] and use them",
+        "{{npc|Nurse|nurse.png|https://terraria.fandom.com/wiki/Nurse}}: use your first [[Life Crystal|https://terraria.fandom.com/wiki/Life_Crystal]]",
+        "{{event|Blood Moon|blood-moon.png|https://terraria.fandom.com/wiki/Blood_Moon}}: use your first [[Life Crystal|https://terraria.fandom.com/wiki/Life_Crystal]] to unlock the event",
+        "{{npc|Merchant|merchant.png|https://terraria.fandom.com/wiki/Merchant}}: get 50 silver coins",
+        "{{npc|Demolitionist|demolitionist.png|https://terraria.fandom.com/wiki/Demolitionist}}: get an [[explosive|https://terraria.fandom.com/wiki/Explosives_(class)]]"
       ]
     },
     {
       "title": "II: The Corruption",
       "items": [
-        "👨 PAINTER: have at least 8 town NPCs",
-        "👨 GOLFER: talk to him in the Underground Desert"
+        "<img src='media/npc/painter.png' /> PAINTER: have at least 8 town NPCs",
+        "{{npc|Golfer|golfer.png|https://terraria.wiki.gg/wiki/Golfer}}: talk to him in the Underground Desert"
       ]
     },
     {
       "title": "III: The Dungeon",
       "items": [
-        "Craft a Phaseblade (15 meteorite bars and 10 gems)",
+        "Craft a [[Phaseblade|https://terraria.wiki.gg/wiki/Phaseblades]] (15 meteorite bars and 10 gems)",
         "Isolate the NPCs from the corruption by creating a 6-blocks wide trench around their houses"
       ]
     },
     {
       "title": "IV: The Hell",
       "items": [
-        "Craft an Obsidian Skull (20 obsidian) (immunizes against fire damage)",
-        "Craft some Obsidian Skin Potions (immunizes against lava damage)"
+        "Craft an [[Obsidian Skull|https://terraria.wiki.gg/wiki/Obsidian_Skull]] (20 obsidian) (immunizes against fire damage)",
+        "Craft some [[Obsidian Skin Potions|https://terraria.wiki.gg/wiki/Obsidian_Skin_Potion]] (immunizes against lava damage)"
       ]
     },
     {
       "title": "V: The Hardmode",
       "items": [
-        "Farm the 💀 WALL OF FLESH as many times as necessary to get the Pwnhammer and the Emblems",
+        "Farm the {{boss|Wall of Flesh|wall-of-flesh.png|https://terraria.wiki.gg/wiki/Wall_of_Flesh}} as many times as necessary to get the Pwnhammer and the Emblems",
         "Destroy the altars in corrupted biomes with the Pwnhammer to spawn new ores"
       ]
     },
@@ -39,7 +47,7 @@
       "title": "VI: Mechanical Terrors",
       "items": [
         "🛡️ Gear up for the boss (weapons, potions & armor)",
-        "💀 THE DESTROYER: summon the boss at night with a Mechanical Worm, then defeat it"
+        "<img src='media/bosses/the-destroyer.png' /> THE DESTROYER: summon the boss at night with a Mechanical Worm, then defeat it"
       ]
     },
     {
@@ -60,13 +68,13 @@
       "title": "IX: The King of the oceans",
       "items": [
         "🛡️ Gear up for the bosses (weapons, potions & armor)",
-        "📅 OLD ONE'S ARMY: put an Eternia Crystal in the Eternia Crystal Stand and survive until the boss"
+        "{{event|Old One's Army|old-ones-army.png|https://terraria.wiki.gg/wiki/Old_One%27s_Army}}: put an Eternia Crystal in the Eternia Crystal Stand and survive until the boss"
       ]
     },
     {
       "title": "X: Journey's End",
       "items": [
-        "Upgrade your gear and weapons rarity by reforging them at the 👨 GOBLIN TINKERER",
+        "Upgrade your gear and weapons rarity by reforging them at the <img src='media/npcs/goblin-tinkerer.png' /> GOBLIN TINKERER",
         "🛡️ Gear up for the bosses (weapons, potions & armor)"
       ]
     },
