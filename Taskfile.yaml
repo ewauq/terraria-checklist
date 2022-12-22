@@ -1,9 +1,5 @@
 # https://taskfile.dev
 
-# # Bundle all file in one JavaScript file
-# - echo 📦 Bundling files...
-# - npx rollup $TEMP_FOLDER/main.js --file $TEMP_FOLDER/main.js --format iife
-
 version: '3'
 
 env:
