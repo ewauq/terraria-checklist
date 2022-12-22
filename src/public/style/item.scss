@@ -1,0 +1,75 @@
+@use 'variables' as *;
+
+.todo-item {
+  display: flex;
+  margin-bottom: 20px;
+  input[type='checkbox'] {
+    /* reset */
+    // -webkit-appearance: none;
+    // appearance: none;
+    margin: 0;
+
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+  }
+
+  .checkbox-wrapper {
+    align-items: center;
+    display: flex;
+  }
+
+  .text {
+    margin-left: 16px;
+    line-height: 30px;
+
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .npc,
+    .boss,
+    .event {
+      a {
+        color: $darkGreyColor;
+        margin-left: 6px;
+        display: inline;
+        padding: 4px 6px;
+        border-radius: 6px;
+        text-transform: uppercase;
+      }
+    }
+
+    .npc {
+      a {
+        background-color: $npcColor;
+      }
+    }
+
+    .boss {
+      a {
+        background-color: $bossColor;
+      }
+    }
+
+    .event {
+      a {
+        background-color: $eventColor;
+      }
+    }
+
+    img {
+      vertical-align: text-top;
+    }
+  }
+
+  &.completed {
+    transition: opacity 0.3s linear;
+    text-decoration: line-through;
+    opacity: 0.4;
+  }
+}
