@@ -7,19 +7,24 @@
   "parserOptions": {
     "project": "tsconfig.json"
   },
-  "plugins": [
-    "@typescript-eslint",
-    "unicorn"
-  ],
+  "plugins": ["@typescript-eslint", "unicorn", "import"],
   "extends": [
     "airbnb-typescript",
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:unicorn/all",
-    "plugin:import/recommended"
+    "plugin:unicorn/all"
   ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".ts"],
+        "moduleDirectory": ["src", "node_modules"]
+      }
+    }
+  },
   "rules": {
+    "import/no-unresolved": "error",
     "@typescript-eslint/explicit-function-return-type": "error",
     "@typescript-eslint/indent": "off",
     "@typescript-eslint/no-unused-vars": "error",
@@ -33,19 +38,7 @@
         "skipComments": true
       }
     ],
-    "no-console": "error",
-    "no-restricted-imports": [
-      "error",
-      {
-        "patterns": [
-          ".*"
-        ]
-      }
-    ],
-    "eqeqeq": [
-      "error",
-      "always"
-    ],
+    "eqeqeq": ["error", "always"],
     "no-unused-vars": "off",
     "unicorn/filename-case": [
       "error",
@@ -54,8 +47,7 @@
       }
     ],
     "unicorn/no-null": "off",
-    "react/jsx-filename-extension": [
-      0
-    ]
+    "unicorn/prefer-top-level-await": "off",
+    "react/jsx-filename-extension": [0]
   }
 }

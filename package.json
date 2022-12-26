@@ -1,15 +1,19 @@
 {
   "scripts": {
-    "build": "npx tsc",
+    "build": "npx tsc && cp -r src/public/** dist/",
     "build-watch": "npx tsc -w",
     "lint": "eslint '**/*.{ts,js}'",
-    "format": "prettier --config .prettierrc {dist,src}/**/*.{js,ts} --write",
+    "format": "prettier --config .prettierrc {dist,src}/**/*.{js,ts,html} --write",
     "reset": "rm -fr .node_modules dist package-lock.json && npm cache clean --force && npm install"
   },
   "devDependencies": {
     "eslint": "^8.29.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-unicorn": "^45.0.1",
+    "prettier": "^2.8.1",
+    "rollup": "^3.7.5",
     "typescript": "^4.9.4"
   }
 }

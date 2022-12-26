@@ -1,0 +1,29 @@
+@use 'variables' as *;
+@use 'header';
+@use 'intro';
+@use 'section';
+@use 'item';
+
+$debug: false;
+
+* {
+  @if $debug {
+    border: 1px solid rgb(random(200), random(200), random(200));
+  }
+}
+
+body {
+  font-family: $defaultFontFamily;
+}
+
+.page-wrapper {
+  margin: $doubleLargeGap 10%;
+  color: $darkGreyColor;
+  a {
+    color: rgb(18, 91, 132);
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

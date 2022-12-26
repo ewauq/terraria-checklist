@@ -1,0 +1,15 @@
+@use 'variables' as *;
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  max-height: 700px;
+  min-height: 200px;
+  width: 100%;
+
+  .header-logo {
+    font-size: 80px;
+    font-family: $logoFontFamily;
+  }
+}
