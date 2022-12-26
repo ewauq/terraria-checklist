@@ -2,7 +2,7 @@
 
 .todo-item {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: $extraLargeGap;
   input[type='checkbox'] {
     /* reset */
     // -webkit-appearance: none;
@@ -21,7 +21,7 @@
   }
 
   .text {
-    margin-left: 16px;
+    margin-left: $largeGap;
     line-height: 30px;
 
     a {
@@ -36,10 +36,10 @@
     .event {
       a {
         color: $darkGreyColor;
-        margin-left: 6px;
+        margin-left: $smallGap;
         display: inline;
-        padding: 4px 6px;
-        border-radius: 6px;
+        padding: $extraSmallGap $smallGap;
+        border-radius: $mediumRadius;
         text-transform: uppercase;
       }
     }

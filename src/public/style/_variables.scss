@@ -3,11 +3,7 @@ $defaultFontFamily: 'Open Sans', sans-serif;
 $logoFontFamily: 'Bebas Neue', sans-serif;
 
 // Font sizes
-$normalFontSize: 16px;
-
-// Font weight
-$normalFontWeight: 400;
-$lightBoldFontWeight: 600;
+$normalFontSize: 1rem;
 
 // Colors
 $darkGreyColor: rgb(55, 55, 55);
@@ -17,5 +13,12 @@ $npcColor: #dff5df;
 $eventColor: #d3edf3;
 
 // Gaps
+$extraSmallGap: 4px;
+$smallGap: 6px;
 $mediumGap: 10px;
-$largeGap: 40px;
+$largeGap: 16px;
+$extraLargeGap: 20px;
+$doubleLargeGap: 40px;
+
+// Border Radius
+$mediumRadius: 6px;
