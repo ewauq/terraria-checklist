@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackTagsPlugin = require('html-webpack-tags-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const Meta = {
   Title: 'Progression Checklist for Terraria 1.4',
@@ -21,7 +22,7 @@ const Meta = {
 
 module.exports = {
   mode: 'development',
-  entry: './main.tsx',
+  entry: './src/main.tsx',
   devtool: 'inline-source-map',
   output: { path: path.join(__dirname, '/dist'), filename: 'bundle.js' },
   devtool: 'inline-source-map',
@@ -31,12 +32,14 @@ module.exports = {
       { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader' },
       { test: /\.tsx?$/, use: 'ts-loader', exclude: /node_modules/ },
       { test: /\.css$/, use: [{ loader: 'style-loader' }, { loader: 'css-loader' }] },
+      { test: /\.(png|svg|jpg|jpeg|gif)$/i, type: 'asset/resource' },
     ],
   },
   resolve: { extensions: ['.tsx', '.ts', '.js'] },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'index.html',
+      favicon: './src/static/media/favicon.png',
+      template: './src/index.html',
     }),
     new HtmlWebpackTagsPlugin({
       metas: [
@@ -83,6 +86,9 @@ module.exports = {
           },
         },
       ],
+    }),
+    new CopyWebpackPlugin({
+      patterns: [{ from: 'src/static', to: 'static' }],
     }),
   ],
   performance: {
