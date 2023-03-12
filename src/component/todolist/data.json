@@ -1,0 +1,51 @@
+{
+  "sections": [
+    {
+      "title": "I: Journey's Beginning",
+      "items": [
+        "Gather resources to build a <a href='https://terraria.wiki.gg/wiki/House'>house</a> for the <span class='npc'><img src='/static/media/npc/guide.png'><a href='https://terraria.wiki.gg/wiki/Guide' target='_blank'>Guide</a></<span>",
+        "Gather metal ores to improve your <a href='https://terraria.wiki.gg/wiki/Tools'>tools</a> and your <a href='https://terraria.wiki.gg/wiki/Armor'>armor</a> (<a href='https://terraria.wiki.gg/wiki/Silver_Ore'>silver</a>/<a href='https://terraria.wiki.gg/wiki/Tungsten_Ore'>tungsten</a>)"
+      ]
+    },
+    {
+      "title": "II: The Corruption",
+      "items": ["..."]
+    },
+    {
+      "title": "III: The Dungeon",
+      "items": ["..."]
+    },
+    {
+      "title": "IV: The Hell",
+      "items": ["..."]
+    },
+    {
+      "title": "V: The Hardmode",
+      "items": ["..."]
+    },
+    {
+      "title": "VI: Mechanical Terrors",
+      "items": ["..."]
+    },
+    {
+      "title": "VII: The Green Inferno",
+      "items": ["..."]
+    },
+    {
+      "title": "VIII: The Ritual",
+      "items": ["..."]
+    },
+    {
+      "title": "IX: The King of the oceans",
+      "items": ["..."]
+    },
+    {
+      "title": "X: Journey's End",
+      "items": ["..."]
+    },
+    {
+      "title": "Post Moon Lord",
+      "items": ["..."]
+    }
+  ]
+}
