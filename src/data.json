@@ -140,7 +140,6 @@
             "~~🌄 Exploration & adventure~~",
             "Farm the {boss Wall of Flesh}(Wall_of_Flesh) as many times as necessary to get the [Pwnhammer](Pwnhammer) and the [Emblems](Emblem)",
             "Destroy the [altars](Altars) in corrupted biomes with the Pwnhammer to spawn new ores",
-            "Buy the [Clentaminator](Clentaminator) and [reduce the corruption](Guide:Maintaining_world_purity) if necessary",
             "Explore the undergrounds and gather some [cobalt](Cobalt_Ore)/[palladium](Palladium_Ore)",
             "Upgrade your gear and tools with [cobalt](Cobalt_Ore)/[palladium](Palladium_Ore)",
             "Upgrade your gear and tools with [mythril](Mythril_Ore)/[orichalcum](Orichalcum_Ore)",
@@ -183,6 +182,7 @@
             "~~🌄 Exploration & adventure~~",
             "Upgrade your [Emblems](Emblem) to [Avenger Emblem](Avenger_Emblem)",
             "Craft a pair of [wings](Wings)",
+            "Buy the [Clentaminator](Clentaminator) at the {npc Steampunker}(Steampunker) and [reduce the corruption](Guide:Maintaining_world_purity) if necessary",
 
             "~~🧙 NPC unlocks~~",
             "{npc Steampunker}(Steampunker): defeat at least one [Mechanical Boss](Mechanical_bosses)"
@@ -202,7 +202,6 @@
 
             "~~🧙 NPC unlocks~~",
             "{npc Cyborg}(Cyborg): defeat {boss Plantera}(Plantera)",
-            "{npc Princess}(Princess): have unlocked all previously mentioned NPCs in your world",
 
             "~~💀 Boss fights~~",
             "🛡️ Gear up for the next boss ([weapons](Weapons), [potions](Potions) & [armor](Armor))",
@@ -253,7 +252,8 @@
             "{event Old One's Army}(Old_One's_Army): put an [Eternia Crystal](Eternia_Crystal) in the [Eternia Crystal Stand](Eternia_Crystal_Stand) and survive until the boss",
 
             "~~🧙 NPC unlocks~~",
-            "{npc Truffle}(Truffle): make an artificial [Mushroom biome](Mushroom_biome) with at least 200 Mushroom biome blocks (using [Mushroom Grass Seeds](Mushroom_Grass_Seeds) on dirt is good enough) and build a house to attract the NPC"
+            "{npc Truffle}(Truffle): make an artificial [Mushroom biome](Mushroom_biome) with at least 200 Mushroom biome blocks (using [Mushroom Grass Seeds](Mushroom_Grass_Seeds) on dirt is good enough) and build a house to attract the NPC",
+            "{npc Princess}(Princess): have unlocked all previously mentioned NPCs in your world"
           ]
         },
         {
