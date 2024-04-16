@@ -51,7 +51,7 @@
           "lines": [
             "~~🌄 Exploration & adventure~~",
             "Get some [Purification Powder](Purification_Powder) by crafting it or by buying it from the {npc Dryad}(Dryad)",
-            "Destroy only two [Shadow Orbs](Shadow_Orb)/[Crimson Hearts](Crimson_Heart) to trigger [meteorite](Meteorite_(biome)) crashes (preferably between midnight and dawn)",
+            "Defeat {boss Eater of Worlds}(Eater_of_Worlds)/{boss Brain of Cthulhu}(Brain_of_Cthulhu) to trigger a [meteor crash](Meteorite_(biome)) (50% chance) the next midnight",
             "Mine completely the [meteorite](Meteorite) and upgrade your gear",
             "Buy [Rocket Boots](Rocket_Boots) from the {npc Goblin Tinkerer}(Goblin_Tinkerer)",
             "Upgrade the weapons and gear [rarity](Rarity) by reforging them at the {npc Goblin Tinkerer}(Goblin_Tinkerer)",
