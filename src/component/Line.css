@@ -1,0 +1,81 @@
+.entity {
+  display: inline-block;
+  line-height: 24px;
+  font-size: 0;
+}
+
+.entity img {
+  display: inline;
+  vertical-align: top;
+  margin-right: 4px;
+}
+
+.entity a {
+  margin-left: 2px;
+  color: var(--blue-link);
+  font-size: var(--regular);
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+.entity.npc a {
+  border-bottom: 2px solid rgb(126, 196, 136);
+}
+
+.entity.boss a {
+  border-bottom: 2px solid rgb(198, 58, 58);
+}
+
+.entity.event a {
+  border-bottom: 2px solid rgb(57, 112, 215);
+}
+
+.entity a:hover {
+  color: var(--regular);
+  border-color: var(--regular);
+}
+
+.checklist-items .item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  flex-direction: row;
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.18, 1);
+}
+
+.checklist-items .item.done {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.3);
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.18, 1);
+  filter: grayscale(100%);
+}
+
+.checklist-items .item.done a {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.3);
+  border: 0;
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.18, 1);
+}
+
+.checklist-items .item.done img {
+  opacity: 0.3;
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.18, 1);
+}
+
+.checklist-items .item .line {
+  display: inline;
+  line-height: 24px;
+  max-width: 830px;
+}
+
+.checklist-items .item input {
+  display: block;
+  min-height: 26px;
+  min-width: 26px;
+  height: 26px;
+  width: 26px;
+}
+
+.checklist-items .item h3 {
+  margin-top: 26px;
+}
