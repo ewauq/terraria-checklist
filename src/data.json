@@ -1,0 +1,345 @@
+{
+  "sections": [
+    {
+      "name": "Adventure",
+      "chapters": [
+        {
+          "id": "journeys-beginning",
+          "name": "I. Journery's Beginning",
+          "color": "#498e62",
+          "lines": [
+            "~~🌄 Exploration & adventure~~",
+            "Gather resources to build a [house](House) with a [table](Tables), a [chair](Chairs), and a [door](Doors) for the {npc Guide}(Guide) to move in",
+            "Gather ores to improve your [tools](Tools), [armor](Armor) and [weapons](Weapons) with [silver](Silver_Ore)/[tungsten](Tungsten_Ore)",
+            "Explore [caverns](Cavern), find some [Life Crystals](Life_Crystal), and **consume a maximum of 4 of them for now**",
+            "Collect some [Fallen Stars](Fallen_Star) to craft some [Mana Crystals](Mana_Crystal) and use them to increase your mana to 100",
+            "Buy a [Piggy Bank](Piggy_Bank) from the {npc Merchant}(Merchant) and put your coins in it to save them from being lost on death",
+            "Craft a [Grappling Hook](Hooks#Grappling_Hook) to help you navigate the world more easily",
+            "Craft some [Spelunker Potions](Spelunker_Potion) to illuminates nearby ores, gems, chests and other valuable objects",
+            "Upgrade your gear with [gold](Gold_Ore)/[platinum](Platinum_Ore)",
+            "Increase your maximum mana to 200 if needed",
+            "Increase your health points to 200 by using a fifth [Life Crystal](Life_Crystal)",
+            "Defeat the bosses (see below)",
+            "Unlock the NPCs (see below)",
+
+            "~~🧙 NPC unlocks~~",
+            "Build a house for each of the following NPCs",
+            "{npc Nurse}(Nurse): use a [Life Crystal](Life_Crystal)",
+            "{npc Merchant}(Merchant): get 50 silver [coins](Coins)",
+            "{npc Demolitionist}(Demolitionist): get an [explosive](Explosives)",
+            "{npc Dye Trader}(Dye_Trader): find a [dye plant](Plants#Dye_plants)",
+            "{npc Stylist}(Stylist): free the NPC trapped in a [spiders nest](Spider_Nest)",
+            "{npc Angler}(Angler): talk to the sleeping NPC in the ocean biome",
+            "{npc Arms Dealer}(Arms_Dealer): find at least one [bullet](Bullets) or a bullet-firing [gun](Guns)",
+            "{npc Zoologist}(Zoologist): have at least 10% of the [bestiary](Bestiary) filled (54 entries) ",
+            "{npc Dryad}(Dryad): defeat the {boss Eye of Cthulhu}(Eye_of_Cthulhu)",
+
+            "~~💀 Boss fights~~",
+            "🛡️ Gear up for the next fights ([weapons](Weapons), [potions](Potions) & [armor](Armor))",
+            "{boss King Slime}(King_Slime): summon the boss by using a [Slime Crown](Slime_Crown), **or** by killing 150 [slimes](Slimes) during the {event Slime Rain}(Slime_Rain) event",
+            "{boss Eye of Cthulhu}(Eye_of_Cthulhu): unlock the boss spawning by having at least 200 HP and 4 town NPCs **or** by using a [Suspicious Looking Eye](Suspicious_Looking_Eye)",
+            "Farm the {boss Eye of Cthulhu}(Eye_of_Cthulhu) for [demonite](Demonite_Ore)/[crimtane](Crimtane_Ore) ores and upgrade your gear",
+
+            "~~📅 Event triggers~~",
+            "{event Blood Moon}(Blood_Moon): use your first [Life Crystal](Life_Crystal) to unlock the event"
+          ]
+        },
+        {
+          "id": "the-corruption",
+          "name": "II. The Corruption",
+          "color": "linear-gradient(135deg, rgba(73,50,87,1) 0%, rgba(73,50,87,1) 50%, rgba(93,31,26,1) 50%)",
+          "lines": [
+            "~~🌄 Exploration & adventure~~",
+            "Get some [Purification Powder](Purification_Powder) by crafting it or by buying it from the {npc Dryad}(Dryad)",
+            "Destroy only two [Shadow Orbs](Shadow_Orb)/[Crimson Hearts](Crimson_Heart) to trigger [meteorite](Meteorite_(biome)) crashes (preferably between midnight and dawn)",
+            "Mine completely the [meteorite](Meteorite) and upgrade your gear",
+            "Buy [Rocket Boots](Rocket_Boots) from the {npc Goblin Tinkerer}(Goblin_Tinkerer)",
+            "Upgrade the weapons and gear [rarity](Rarity) by reforging them at the {npc Goblin Tinkerer}(Goblin_Tinkerer)",
+
+            "Defeat the boss (see below)",
+            "Unlock the NPCs (see below)",
+            "Destroy all [Shadow Orbs](Shadow_Orb)/[Crimson Hearts](Crimson_Heart) to farm the boss and meteorites",
+            "Upgrade your gear with [demonite](Demonite)/[crimtane](Crimtane)",
+
+            "~~🧙 NPC unlocks~~",
+            "{npc Painter}(Painter): have at least 8 town NPCs",
+            "{npc Golfer}(Golfer): talk to him in the [Underground Desert](Underground_Desert)",
+            "{npc Goblin Tinkerer}(Goblin_Tinkerer): defeat the {event Goblin Army}(Goblin_Army) and find the lost NPC in [caverns](Cavern)",
+            "{npc Tavernkeep}(Tavernkeep): defeat {boss Eater of Worlds}(Eater_of_Worlds)/{boss Brain of Cthulhu}(Brain_of_Cthulhu) and find the Unconscious Man NPC in any layer of the world",
+
+            "~~💀 Boss fights~~",
+            "🛡️ Gear up for the next fights ([weapons](Weapons), [potions](Potions) & [armor](Armor))",
+            "Prepare a large and flat area at the surface for the next boss fight",
+            "{boss Eater of Worlds}(Eater_of_Worlds)/{boss Brain of Cthulhu}(Brain_of_Cthulhu): destroy a third [Shadow Orb](Shadow_Orb)/[Crimson Heart](Crimson_Heart) to summon the boss, then defeat it",
+
+            "~~📅 Event triggers~~",
+            "{event Goblin Army}(Goblin_Army): destroy at least one [Shadow Orb](Shadow_Orb)/[Crimson Heart](Crimson_Heart) and have at least 200 HP (triggers only on daytime)",
+            "Get some mobility equipment ([Rocket Boots](Rocket_Boots), [Grappling Hook](Hooks#Grappling_Hook), [Mounts](Mounts), etc.) and craft 101 [torches](Torches)",
+            "{event The Torch God}(The_Torch_God): in the [Underground](Underground) layer, prepare a large squared area and place 101 torches in it to trigger the event. Surviving the event will reward you with the [Torch God's Favor](Torch_God's_Favor)"
+          ]
+        },
+        {
+          "id": "the-dungeon",
+          "name": "III. The Dungeon",
+          "color": "#232322",
+          "lines": [
+            "~~🌄 Exploration & adventure~~",
+            "Craft a [Phaseblade](Phaseblades) (15 meteorite bars and 10 gems)",
+            "Isolate the NPCs from the corruption by creating a [6-blocks wide trench](Guide:Maintaining_world_purity#Pre-Hardmode) around their houses",
+            "Upgrade your [Rocket Boots](Rocket_Boots) and the other accesories at [Tinkerer's Workshop](Tinkerer's_Workshop) if possible",
+            "Defeat the bosses (see below)",
+            "Unlock the NPCs (see below)",
+            "Explore the [dungeon](Dungeon) completely: open a maximum of golden chests, collect an [Alchemy Table](Alchemy_Table) and a [Bewitching Table](Bewitching_Table)",
+
+            "~~🧙 NPC unlocks~~",
+            "{npc Witch Doctor}(Witch_Doctor): defeat the {boss Queen Bee}(Queen_Bee)",
+            "{npc Clothier}(Clothier): defeat the {boss Skeletron}(Skeletron)",
+            "{npc Mechanic}(Mechanic): talk to the Bound Mechanic in the dungeon",
+            "{npc Party Girl}(Party_Girl): have at least 14 town NPCs",
+
+            "~~💀 Boss fights~~",
+            "🛡️ Gear up for the next fights ([weapons](Weapons), [potions](Potions) & [armor](Armor))",
+            "Find a [giant hive](Bee_Hive_(biome)) in the jungle biome",
+            "{boss Queen Bee}(Queen_Bee): destory the hive [larva](Larva) to summon the boss, then defeat her",
+            "{boss Skeletron}(Skeletron): talk to the {npc Old Man}(Old_Man) at the dungeon entrance **at night** to summon the boss, then defeat it",
+
+            "~~📅 Event triggers~~",
+            "Prepare a [large and flat area at the surface](Old_One's_Army#Terrain_requirements) (124 blocks), summon some [sentries](Ballista_sentry_summons) and put an [Eternia Crystal Stand](Eternia_Crystal_Stand) in the middle of it",
+            "{event Old One's Army}(Old_One's_Army): put an [Eternia Crystal](Eternia_Crystal) in the [Eternia Crystal Stand](Eternia_Crystal_Stand) and survive until wave 5"
+          ]
+        },
+        {
+          "id": "the-hell",
+          "name": "IV. The Hell",
+          "color": "#d73f21",
+          "notes": "The world will now enter Hardmode introducing new and powerful monsters and ores. Corruption will also spread much faster.",
+          "lines": [
+            "~~🌄 Exploration & adventure~~",
+            "Craft an [Obsidian Skull](Obsidian_Skull) (20 [obsidian](Obsidian) (immunizes against fire damage)",
+            "Craft some [Obsidian Skin Potions](Obsidian_Skin_Potion) (immunizes against lava damage)",
+            "Go to the Hell layer and gather a maximum of [hellstone](Hellstone)",
+            "Upgrade your gear with [hellstone](Hellstone): 300 [hellstone](Hellstone) and 100 [obsidian](Obsidian) to upgrade to [Molten armor set](Molten_armor), [tools](Hellstone_Bar#Used_in) and the [Volcano sword](Volcano)",
+            "Explore completely the Hell layer: get a [Hellforge](Hellforge), open all [Shadow Chests](Shadow_Chest)",
+            "Get some [Guide Voodoo Doll](Guide_Voodoo_Doll) by killing [Voodoo Demons](Voodoo_Demon)",
+            "Defeat the bosses (see below)",
+
+            "~~💀 Boss fights~~",
+            "Prepare a very large and flat area above the lava for the next boss fight",
+            "🛡️ Gear up for the next fights ([weapons](Weapons), [potions](Potions) & [armor](Armor))",
+            "{boss Wall of Flesh}(Wall_of_Flesh) throw a [Guide Voodoo Doll](Guide_Voodoo_Doll) in the lava (to the left to make the boss spawn from the left and vice versa), then defeat the boss",
+
+            "~~📅 Event triggers~~",
+            "{event Old One's Army}(Old_One's_Army): reach wave 5 if you haven't already"
+          ]
+        },
+        {
+          "id": "the-hardmode",
+          "name": "V. The Hardmode",
+          "color": "#27486f",
+          "lines": [
+            "~~🌄 Exploration & adventure~~",
+            "Farm the {boss Wall of Flesh}(Wall_of_Flesh) as many times as necessary to get the [Pwnhammer](Pwnhammer) and the [Emblems](Emblem)",
+            "Destroy the [altars](Altars) in corrupted biomes with the Pwnhammer to spawn new ores",
+            "Buy the [Clentaminator](Clentaminator) and [reduce the corruption](Guide:Maintaining_world_purity) if necessary",
+            "Explore the undergrounds and gather some [cobalt](Cobalt_Ore)/[palladium](Palladium_Ore)",
+            "Upgrade your gear and tools with [cobalt](Cobalt_Ore)/[palladium](Palladium_Ore)",
+            "Upgrade your gear and tools with [mythril](Mythril_Ore)/[orichalcum](Orichalcum_Ore)",
+            "Upgrade your gear and tools with [adamantite](Adamantite_Ore)/[titanium](Titanium_Ore)",
+            "Get a [Gelatin Crystal](Gelatin_Crystal) in the [Underground Hallows](Underground_Hallow)",
+            "Defeat the bosses (see below)",
+            "Unlock the NPCs (see below)",
+
+            "~~🧙 NPC unlocks~~",
+            "{npc Wizard}(Wizard): talk to the Bound Wizard in the cavern layer",
+            "{npc Tax Collector}(Tax_Collector): convert a [Tortured Soul](Tortured_Soul) in the Hell with some [Purification Powder](Thrown_Powder)",
+            "{npc Pirate}(Pirate): defeat the {event Pirate Invasion}(Pirate_Invasion)",
+
+            "~~💀 Boss fights~~",
+            "{boss Queen Slime}(Queen_Slime): summon the boss with a [Gelatin Crystal](Gelatin_Crystal) in the Hallow biome and defeat her",
+            "During the {event Blood Moon}(Blood_Moon) summon mini-bosses {boss Blood Eel}(Blood_Eel) and {boss Dreadnautilus}(Dreadnautilus) by fishing anywhere (fishing at the surface layer is recommended to have enough space to fight)",
+
+            "~~📅 Event triggers~~",
+            "{event Pirate Invasion}(Pirate_Invasion): occurs randomly after defeating the {boss Wall of Flesh}(Wall_of_Flesh)"
+          ]
+        },
+        {
+          "id": "the-mechanical-terrors",
+          "name": "VI. The Mechanical Terrors",
+          "color": "#000000",
+          "lines": [
+            "~~💀 Boss fights~~",
+            "🛡️ Gear up for the next boss ([weapons](Weapons), [potions](Potions) & [armor](Armor))",
+            "{boss The Destroyer}(The_Destroyer): summon the boss with a [Mechanical Worm](Mechanical_Worm) **at night** and defeat it",
+            "Farm {boss The Destroyer}(The_Destroyer) to gather a maximum of [hallowed bars](Hallowed_Bar)",
+            "Upgrade your armor with [hallowed bars](Hallowed_Bar)",
+
+            "🛡️ Gear up for the next boss ([weapons](Weapons), [potions](Potions) & [armor](Armor))",
+            "{boss Skeletron Prime}(Skeletron_Prime): summon the boss with a [Mechanical Skull](Mechanical_Skull) **at night** and defeat it",
+
+            "🛡️ Gear up for the next boss ([weapons](Weapons), [potions](Potions) & [armor](Armor))",
+            "Find some [ranged weapons](Ranged_weapons) and craft some [ammunitions](Ammunition_items) ([Chlorophyte Bullets](Chlorophyte_Bullet) for example)",
+            "{boss The Twins}(The_Twins): summon the boss with a [Mechanical Eye](Mechanical_Eye) **at night** and defeat them",
+
+            "~~🌄 Exploration & adventure~~",
+            "Upgrade your [Emblems](Emblem) to [Avenger Emblem](Avenger_Emblem)",
+            "Craft a pair of [wings](Wings)",
+
+            "~~🧙 NPC unlocks~~",
+            "{npc Steampunker}(Steampunker): defeat at least one [Mechanical Boss](Mechanical_bosses)"
+          ]
+        },
+        {
+          "id": "the-green-inferno",
+          "name": "VII. The Green Inferno",
+          "color": "#2f701a",
+          "notes": "Defeating Plantera slows the corruption spread by 50%.",
+          "lines": [
+            "~~🌄 Exploration & adventure~~",
+            "Find some [Life Fruits](Life_Fruit) in the jungle biome and max out your HP to 500 ",
+            "Upgrade your gear with [chlorophyte](Chlorophyte_Ore)",
+            "Upgrade your gear and weapons [rarity](Rarity) by reforging them at the {npc Goblin Tinkerer}(Goblin_Tinkerer)",
+            "Go back to the dungeon and farm the hardmode monsters to get new items",
+
+            "~~🧙 NPC unlocks~~",
+            "{npc Cyborg}(Cyborg): defeat {boss Plantera}(Plantera)",
+            "{npc Princess}(Princess): have unlocked all previously mentioned NPCs in your world",
+
+            "~~💀 Boss fights~~",
+            "🛡️ Gear up for the next boss ([weapons](Weapons), [potions](Potions) & [armor](Armor))",
+            "Find the a [Plantera's Bulb](Plantera's_Bulb) in the jungle biome",
+            "Find an area open enough to fight next tp the bulb or prepare it",
+            "{boss Plantera}(Plantera): destroy the [Plantera's Bulb](Plantera's_Bulb) to summon the boss, then defeat it",
+
+            "~~📅 Event triggers~~",
+            "{event Old One's Army}(Old_One's_Army): put an [Eternia Crystal](Eternia_Crystal) in the [Eternia Crystal Stand](Eternia_Crystal_Stand) and survive until wave 7",
+            "{event Frost Moon}(Frost_Moon): trigger the event **at night** with a [Naughty Present](Naughty_Present) and survive until wave 15"
+          ]
+        },
+        {
+          "id": "the-ritual",
+          "name": "VIII. The Ritual",
+          "color": "#381d14",
+          "notes": "At night, summon all Mecanical Bosses and defeat them simultaneously to get a rare achievement.",
+          "lines": [
+            "~~🌄 Exploration & adventure~~",
+            "Get some [biome keys](Biome_Chests) and open the corresponding [chests](Biome_Chests#Types) in the dungeon",
+
+            "~~💀 Boss fights~~",
+            "🛡️ Gear up for the next boss ([weapons](Weapons), [potions](Potions) & [armor](Armor))",
+            "Find the jungle [temple](Temple) entrance and explore it",
+            "{boss Golem}(Golem): find a [Lihzahrd Power Cell](Lihzahrd_Power_Cell) in the temple chests, put it in the [Lihzahrd Altar](Lihzahrd_Altar) at the end of the temple to summon the boss, then defeat it",
+
+            "~~📅 Event triggers~~",
+            "Get 8 [Solar Tablet Fragments](Solar_Tablet_Fragment) found in [Lihzahrd Chests](Lihzahrd_Chest) and craft a [Solar Tablet](Solar_Tablet)",
+            "{event Solar Eclipse}(Solar_Eclipse): use the [Solar Tablet](Solar_Tablet) to trigger the event **during the day**",
+            "{event Martian Madness}(Martian_Madness): find a [Martian Probe](Martian_Probe) at the surface, approach it to be detected and let it escape to trigger the event",
+            "{event Pumpkin Moon}(Pumpkin_Moon): trigger the event **at night** with a [Pumpkin Moon Medallion](Pumpkin_Moon_Medallion) and survive until wave 15"
+          ]
+        },
+        {
+          "id": "the-king-of-the-oceans",
+          "name": "IX. The King of the Oceans",
+          "color": "#1544ba",
+          "lines": [
+            "~~💀 Boss fights~~",
+            "🛡️ Gear up for the next boss ([weapons](Weapons), [potions](Potions) & [armor](Armor))",
+            "Capture a [Truffle Worm](Truffle_Worm) with a [Bug Net](Bug_Net) in the [Mushroom biome](Mushroom_biome)",
+            "Prepare a large area with multiple levels of [platforms](Platforms) in the [ocean](Ocean) biome",
+            "{boss Duke Fishron}(Duke_Fishron): summon the boss by fishing in the ocean with a [Truffle Worm](Truffle_Worm) as bait, then defeat it",
+            "Farm {boss Duke Fishron}(Duke_Fishron) to get his wings and powerful weapons",
+            "{boss Betsy}(Betsy): defeat the boss after 7th wave of the {event Old One's Army}(Old_One's_Army)",
+
+            "~~📅 Event triggers~~",
+            "{event Old One's Army}(Old_One's_Army): put an [Eternia Crystal](Eternia_Crystal) in the [Eternia Crystal Stand](Eternia_Crystal_Stand) and survive until the boss",
+
+            "~~🧙 NPC unlocks~~",
+            "{npc Truffle}(Truffle): make an artificial [Mushroom biome](Mushroom_biome) with at least 200 Mushroom biome blocks (using [Mushroom Grass Seeds](Mushroom_Grass_Seeds) on dirt is good enough) and build a house to attract the NPC"
+          ]
+        },
+        {
+          "id": "journeys-end",
+          "name": "X. Journey’s End",
+          "color": "linear-gradient(135deg, rgba(255,54,0,1) 0%, rgba(255,54,0,1) 25%, rgba(224,0,149,1) 25%, rgba(224,0,149,1) 50%, rgba(43,56,181,1) 50%, rgba(43,56,181,1) 75%, rgba(0,54,49,1) 75%)",
+          "lines": [
+            "~~🌄 Exploration & adventure~~",
+            "Upgrade your gear and weapons [rarity](Rarity) by reforging them at the {npc Goblin Tinkerer}(Goblin_Tinkerer)",
+
+            "~~📅 Event triggers~~",
+            "{event Lunar events}(Lunar_Events): defeat the [Lunatic Cultist](Lunatic_Cultist) at the dungeon entrance to trigger the event",
+            "Destroy **3 of the 4** {event Lunar events}(Lunar_Events) [Celestial Pillars](Celestial_Pillars) that appeared in the world",
+
+            "~~💀 Boss fights~~",
+            "🛡️ Gear up for the next boss ([weapons](Weapons), [potions](Potions) & [armor](Armor))",
+            "{boss Empress of Light}(Empress_of_Light): summon the boss **at night in the Hallow biome** by killing a [Prismatic Lacewing](Prismatic_Lacewing)",
+            "{boss Lunatic Cultist}(Lunatic_Cultist): summon the boss by killing the 4 [Cultists](Cultist) at the dungeon entrance, then defeat it",
+            "🛡️ Gear up for the last time by taking a lot of [defensive potions](Potions#Buff_potions) and [ranged weapons](Ranged_weapons) (with [Chlorophyte Bullets](Chlorophyte_Bullet) for example) and by upgrading your [accessories](Accessories)",
+            "{boss Moon Lord}(Moon_Lord): destroy the forth [Celestial Pillar](Celestial_Pillars) to summon the boss, then defeat him",
+            "Farm the {boss Moon Lord}(Moon_Lord) to get powerfull weapons and some [luminite](Luminite) ores by summoning him with a [Celestial Sigil](Celestial_Sigil)",
+            "Upgrade your gear with [Nebula](Nebula_Fragment)/[Solar](Solar_Fragment)/[Stardust](Stardust_Fragment)/[Vortex](Vortex_Fragment) fragments and [luminite](Luminite) ores"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Extra",
+      "chapters": [
+        {
+          "id": "post-moon-lord",
+          "name": "Post Moon Lord",
+          "color": "#43576a",
+          "lines": [
+            "Upgrade all [accessories](Accessories) and craft a [Cell Phone](Cell_Phone)",
+            "Craft the mining mount [Drill Containment Unit](Drill_Containment_Unit)",
+            "Reforge all items at the {npc Goblin Tinkerer}(Goblin_Tinkerer) to get the best [rarities](Rarity)",
+            "Restart an adventure in [Expert](Expert_Mode) or [Master mode](Master_Mode) to get new items 😏"
+          ]
+        },
+        {
+          "id": "seasonal-events",
+          "name": "Seasonal events",
+          "color": "#91c9ff",
+          "lines": [
+            "~~📅 Event triggers~~",
+            "{event Frost Legion}(Frost_Legion): **only during Christmas season** (15-31 december), triggered with a [Snow Globe](Snow_Globe) that can be found in the monsters loot [presents](Presents)",
+
+            "~~🧙 NPC unlocks~~",
+            "{npc Santa Claus}(Santa_Claus): defeate the {event Frost Legion}(Frost_Legion) is defeated"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Collection",
+      "chapters": [
+        {
+          "id": "armor-sets",
+          "name": "Armor sets",
+          "lines": [
+            "~~Pre-Hardmode sets~~",
+            "Wood armor",
+            "Rich Mahogany armor",
+            "...",
+            "~~Hardmode sets~~",
+            "Pearlwood armor",
+            "Spider armor",
+            "..."
+          ]
+        },
+        {
+          "id": "trophies",
+          "name": "Boss trophies & relics",
+          "lines": [
+            "~~Pre-Hardmode~~",
+            "...",
+            "~~Hardmode~~",
+            "...",
+            "~~Events~~",
+            "...",
+            "~~Fishing~~",
+            "..."
+          ]
+        }
+      ]
+    }
+  ]
+}

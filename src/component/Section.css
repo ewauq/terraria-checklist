@@ -1,0 +1,7 @@
+.chapters {
+  display: flex;
+  width: 280px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}

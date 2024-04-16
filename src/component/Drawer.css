@@ -1,0 +1,57 @@
+.drawer {
+  display: flex;
+  padding: 30px;
+  width: 290px;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+.drawer-top {
+  font-family: 'Bebas Neue';
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.drawer-top span {
+  color: rgb(141, 141, 141);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
+}
+
+.drawer-separator {
+  height: 1px;
+  line-height: 1px;
+  width: 100%;
+  background-color: #eeeeee;
+}
+
+.drawer-sections {
+  align-self: stretch;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.drawer-sections a {
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--black-coal);
+}
+
+.drawer-sections a:hover {
+  text-decoration: underline;
+}
+
+.drawer-sections section {
+  margin: 20px 0;
+}
+
+.drawer-sections section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 0px 4px 0px;
+  margin-bottom: 12px;
+}
