@@ -70,7 +70,7 @@
             "~~💀 Boss fights~~",
             "🛡️ Gear up for the next fights ([weapons](Weapons), [potions](Potions) & [armor](Armor))",
             "Prepare a large and flat area at the surface for the next boss fight",
-            "{boss Eater of Worlds}(Eater_of_Worlds)/{boss Brain of Cthulhu}(Brain_of_Cthulhu): destroy a third [Shadow Orb](Shadow_Orb)/[Crimson Heart](Crimson_Heart) to summon the boss, then defeat it",
+            "{boss Eater of Worlds}(Eater_of_Worlds)/{boss Brain of Cthulhu}(Brain_of_Cthulhu): destroy 3 [Shadow Orbs](Shadow_Orb)/[Crimson Hearts](Crimson_Heart) to summon the boss, then defeat it",
 
             "~~📅 Event triggers~~",
             "{event Goblin Army}(Goblin_Army): destroy at least one [Shadow Orb](Shadow_Orb)/[Crimson Heart](Crimson_Heart) and have at least 200 HP (triggers only on daytime)",
