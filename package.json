@@ -4,7 +4,7 @@
   "description": "Progression Checklist for Terraria",
   "main": "index.html",
   "scripts": {
-    "sass": "sass --watch src/style/:dist/style/main.css"
+    "sass": "sass --watch src/style/main.scss:dist/style/main.min.css --style=compressed"
   },
   "repository": {
     "type": "git",
