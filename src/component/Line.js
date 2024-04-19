@@ -8,7 +8,7 @@ export default class Line {
   }
 
   add(linesNode) {
-    const lineNode = createElement('div', { name: 'item', class: 'item' })
+    const lineNode = createElement('div', { class: 'line' })
 
     if (!this.text.startsWith('~~')) {
       const lineCheckboxNode = createElement('input', {
@@ -24,7 +24,7 @@ export default class Line {
       lineNode.appendChild(lineCheckboxNode)
     }
 
-    const lineTextNode = createElement('span', { class: 'line' }, markdownToHtml(this.text))
+    const lineTextNode = createElement('span', { class: 'text' }, markdownToHtml(this.text))
 
     lineNode.appendChild(lineTextNode)
     linesNode.appendChild(lineNode)

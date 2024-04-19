@@ -1,0 +1,34 @@
+{
+  "name": "terraria-checklist",
+  "version": "2.0.0",
+  "description": "Progression Checklist for Terraria",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch src/style/main.scss:dist/style/main.min.css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewauq/terraria-checklist.git"
+  },
+  "keywords": [
+    "terraria",
+    "checklist",
+    "help",
+    "progression",
+    "walkthrough",
+    "tracking",
+    "bosses",
+    "items",
+    "weapons",
+    "collection"
+  ],
+  "author": "ewauq",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ewauq/terraria-checklist/issues"
+  },
+  "homepage": "https://github.com/ewauq/terraria-checklist#readme",
+  "devDependencies": {
+    "sass": "^1.75.0"
+  }
+}

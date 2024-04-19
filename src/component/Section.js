@@ -25,8 +25,6 @@ export default class Section {
     })
     sectionNode.append(sectionHeadingNode, sectionChaptersNode)
     sectionsNode.appendChild(sectionNode)
-
-    console.log('Adding section ', this.name)
-    console.log('Section added')
+    console.log(`%cSection ${this.name} added`, 'color: #1fc600')
   }
 }

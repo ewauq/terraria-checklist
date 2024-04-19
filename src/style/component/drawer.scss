@@ -1,0 +1,80 @@
+.drawer {
+  display: none;
+  margin-right: -$drawer-width;
+  background-color: white;
+  padding: $gap-large;
+
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.05);
+
+  font-family: $global-font-family;
+
+  @mixin opened {
+    display: block;
+    min-width: $drawer-width;
+    z-index: 9;
+  }
+
+  &.open {
+    @include opened;
+  }
+
+  .text-logo {
+    font-family: 'Bebas Neue';
+    font-size: 22px;
+  }
+
+  .diminished {
+    color: #8d8d8d;
+    font-size: 14px;
+  }
+
+  .separator {
+    height: 1px;
+    line-height: 1px;
+    width: 100%;
+    background-color: #eeeeee;
+    margin: 20px 0;
+  }
+
+  .sections {
+    a {
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration: none;
+      cursor: pointer;
+      color: $color-black-coal;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    h3 {
+      margin-top: $gap-large;
+      margin-bottom: $gap-small;
+      font-size: 18px;
+    }
+
+    .chapters {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 15px;
+      gap: $gap-medium;
+      a {
+        display: inline;
+      }
+    }
+  }
+
+  @include desktop {
+    margin-right: 0;
+    @include opened;
+  }
+
+  @if ($DEBUG) {
+    border: 2px solid blue;
+    background-color: rgb(223, 223, 255);
+  }
+}

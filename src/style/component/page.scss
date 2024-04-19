@@ -1,0 +1,68 @@
+.page {
+  margin-top: 60px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-grow: 1;
+  background-color: white;
+
+  font-family: $text-font-family;
+
+  @include desktop {
+    margin-top: 0;
+  }
+
+  @if ($DEBUG) {
+    $debug-color: red;
+    border: 2px solid $debug-color;
+    background-color: lighten($debug-color, 40%);
+  }
+
+  .cover {
+    padding: $gap-small;
+
+    h1 {
+      font-family: 'IBM Plex Sans Condensed';
+      font-size: 32px;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      width: 100%;
+      text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+
+      @include desktop {
+        font-size: 45px;
+        padding: $gap-xlarge $gap-medium;
+      }
+    }
+  }
+
+  .content {
+    width: 100%;
+
+    p {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+
+      margin: $gap-large;
+
+      @include desktop {
+        margin: $gap-xlarge;
+      }
+
+      @if ($DEBUG) {
+        $debug-color: rgb(123, 255, 0);
+        border: 2px solid $debug-color;
+        background-color: lighten($debug-color, 40%);
+      }
+
+      & > .line:first-of-type h3 {
+        margin-top: 0;
+      }
+
+      &.welcome-text {
+        display: block;
+      }
+    }
+  }
+}
