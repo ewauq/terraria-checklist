@@ -1,0 +1,23 @@
+$DEBUG: false;
+
+$drawer-width: 280px;
+
+$global-font-size: 16px;
+$global-font-family: 'IBM Plex Sans', sans-serif;
+$text-font-family: 'Open Sans', sans-serif;
+$cover-title-font-family: 'IBM Plex Sans Condensed';
+
+$gap-tiny: 6px;
+$gap-small: 10px;
+$gap-medium: 16px;
+$gap-large: 20px;
+$gap-xlarge: 40px;
+
+$color-black-coal: rgba(0, 0, 0, 0.8);
+$color-blue-link: rgb(57, 112, 215);
+
+@mixin desktop {
+  @media only screen and (min-width: 600px) {
+    @content;
+  }
+}

@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  background-color: red;
+
+  font-size: $global-font-size;
+  font-family: $global-font-family;
+  color: $color-black-coal;
+
+  @if ($DEBUG) {
+    border: 2px solid blue;
+  }
+}

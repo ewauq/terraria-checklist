@@ -1,12 +1,16 @@
 import Section from './Section.js'
 
 export default class Drawer {
-  constructor() {
-    this.sectionsNode = document.querySelector('div.drawer-sections')
+  constructor(sections) {
+    this.sectionsNode = document.querySelector('div.sections')
+    this.sections = sections
   }
 
-  addSection(name, chapters) {
-    const section = new Section(name, chapters)
-    section.add(this.sectionsNode)
+  init() {
+    this.sections.map((drawerSection) => {
+      const section = new Section(drawerSection.name, drawerSection.chapters)
+      section.add(this.sectionsNode)
+    })
+    console.log(`%cDrawer initialized`, 'color: #1fc600')
   }
 }

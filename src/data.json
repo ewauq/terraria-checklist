@@ -1,4 +1,10 @@
 {
+  "home": {
+    "id": "home",
+    "name": "Terraria Progression Checklist",
+    "background": "url('media/image/artworks/home.png')",
+    "description": "~~Welcome Terrarian! 👋~~<br/>This tool will walk you through the main content of Terraria 1.4 aka “Journey's End”. This list is obviously not exhaustive, because Terraria contains many random elements.<br/><br/>The document is primarily intended for experienced players. If you are a new to Terraria, I would rather advise you to follow your own adventure without this document which would spoil you much of the discoveries you could make. Terraria is an awesome game that deserve you take your time to explore it.<br/><br/>💾 Your progress is saved in your browser, you can close this page at any time and come back to it later.<br/><br/>🗑️ If you want to delete your checklist data, you can click on “Checklist reset” in the settings screen."
+  },
   "sections": [
     {
       "name": "Adventure",
@@ -6,7 +12,7 @@
         {
           "id": "journeys-beginning",
           "name": "I. Journery's Beginning",
-          "color": "#498e62",
+          "background": "#498e62",
           "lines": [
             "~~🌄 Exploration & adventure~~",
             "Gather resources to build a [house](House) with a [table](Tables), a [chair](Chairs), and a [door](Doors) for the {npc Guide}(Guide) to move in",
@@ -47,7 +53,7 @@
         {
           "id": "the-corruption",
           "name": "II. The Corruption",
-          "color": "linear-gradient(135deg, rgba(73,50,87,1) 0%, rgba(73,50,87,1) 50%, rgba(93,31,26,1) 50%)",
+          "background": "linear-gradient(135deg, rgba(73,50,87,1) 0%, rgba(73,50,87,1) 50%, rgba(93,31,26,1) 50%)",
           "lines": [
             "~~🌄 Exploration & adventure~~",
             "Get some [Purification Powder](Purification_Powder) by crafting it or by buying it from the {npc Dryad}(Dryad)",
@@ -81,7 +87,7 @@
         {
           "id": "the-dungeon",
           "name": "III. The Dungeon",
-          "color": "#232322",
+          "background": "#232322",
           "lines": [
             "~~🌄 Exploration & adventure~~",
             "Craft a [Phaseblade](Phaseblades) (15 meteorite bars and 10 gems)",
@@ -111,7 +117,7 @@
         {
           "id": "the-hell",
           "name": "IV. The Hell",
-          "color": "#d73f21",
+          "background": "#d73f21",
           "notes": "The world will now enter Hardmode introducing new and powerful monsters and ores. Corruption will also spread much faster.",
           "lines": [
             "~~🌄 Exploration & adventure~~",
@@ -135,7 +141,7 @@
         {
           "id": "the-hardmode",
           "name": "V. The Hardmode",
-          "color": "#27486f",
+          "background": "#27486f",
           "lines": [
             "~~🌄 Exploration & adventure~~",
             "Farm the {boss Wall of Flesh}(Wall_of_Flesh) as many times as necessary to get the [Pwnhammer](Pwnhammer) and the [Emblems](Emblem)",
@@ -164,7 +170,7 @@
         {
           "id": "the-mechanical-terrors",
           "name": "VI. The Mechanical Terrors",
-          "color": "#000000",
+          "background": "#000000",
           "lines": [
             "~~💀 Boss fights~~",
             "🛡️ Gear up for the next boss ([weapons](Weapons), [potions](Potions) & [armor](Armor))",
@@ -191,7 +197,7 @@
         {
           "id": "the-green-inferno",
           "name": "VII. The Green Inferno",
-          "color": "#2f701a",
+          "background": "#2f701a",
           "notes": "Defeating Plantera slows the corruption spread by 50%.",
           "lines": [
             "~~🌄 Exploration & adventure~~",
@@ -217,7 +223,7 @@
         {
           "id": "the-ritual",
           "name": "VIII. The Ritual",
-          "color": "#381d14",
+          "background": "#381d14",
           "notes": "At night, summon all Mecanical Bosses and defeat them simultaneously to get a rare achievement.",
           "lines": [
             "~~🌄 Exploration & adventure~~",
@@ -238,7 +244,7 @@
         {
           "id": "the-king-of-the-oceans",
           "name": "IX. The King of the Oceans",
-          "color": "#1544ba",
+          "background": "#1544ba",
           "lines": [
             "~~💀 Boss fights~~",
             "🛡️ Gear up for the next boss ([weapons](Weapons), [potions](Potions) & [armor](Armor))",
@@ -259,7 +265,7 @@
         {
           "id": "journeys-end",
           "name": "X. Journey’s End",
-          "color": "linear-gradient(135deg, rgba(255,54,0,1) 0%, rgba(255,54,0,1) 25%, rgba(224,0,149,1) 25%, rgba(224,0,149,1) 50%, rgba(43,56,181,1) 50%, rgba(43,56,181,1) 75%, rgba(0,54,49,1) 75%)",
+          "background": "linear-gradient(135deg, rgba(255,54,0,1) 0%, rgba(255,54,0,1) 25%, rgba(224,0,149,1) 25%, rgba(224,0,149,1) 50%, rgba(43,56,181,1) 50%, rgba(43,56,181,1) 75%, rgba(0,54,49,1) 75%)",
           "lines": [
             "~~🌄 Exploration & adventure~~",
             "Upgrade your gear and weapons [rarity](Rarity) by reforging them at the {npc Goblin Tinkerer}(Goblin_Tinkerer)",
@@ -286,7 +292,7 @@
         {
           "id": "post-moon-lord",
           "name": "Post Moon Lord",
-          "color": "#43576a",
+          "background": "#43576a",
           "lines": [
             "Upgrade all [accessories](Accessories) and craft a [Cell Phone](Cell_Phone)",
             "Craft the mining mount [Drill Containment Unit](Drill_Containment_Unit)",
@@ -297,7 +303,7 @@
         {
           "id": "seasonal-events",
           "name": "Seasonal events",
-          "color": "#91c9ff",
+          "background": "#91c9ff",
           "lines": [
             "~~📅 Event triggers~~",
             "{event Frost Legion}(Frost_Legion): **only during Christmas season** (15-31 december), triggered with a [Snow Globe](Snow_Globe) that can be found in the monsters loot [presents](Presents)",

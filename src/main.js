@@ -1,5 +1,6 @@
-import ChapterPage from './component/ChapterPage.js'
 import Drawer from './component/Drawer.js'
+import ActionBar from './component/ActionBar.js'
+import Router from './component/Router.js'
 
 class App {
   constructor() {
@@ -7,7 +8,7 @@ class App {
   }
 
   async init() {
-    console.log('App initialization...')
+    console.log('%cApp initialization...', 'color: #000;background: orange;')
 
     const response = await fetch('./data.json')
     this.data = await response.json()
@@ -17,32 +18,16 @@ class App {
       return
     }
 
-    const drawer = new Drawer()
-    this.data.sections.map((section) => drawer.addSection(section.name, section.chapters))
+    const actionBar = new ActionBar()
+    actionBar.init()
 
-    let chapterId = window.location.hash.slice(1)
-    if (chapterId) {
-      this.openPage(chapterId)
-    }
+    const drawer = new Drawer(this.data.sections)
+    drawer.init()
 
-    const self = this
-    window.addEventListener('popstate', function () {
-      chapterId = this.window.location.hash.slice(1)
-      self.openPage(chapterId)
-    })
+    const router = new Router(this.data)
+    router.init()
 
-    console.log('App loaded')
-  }
-
-  openPage(chapterId) {
-    this.data.sections.map((section) => {
-      section.chapters.map((chapter) => {
-        if (chapter.id === chapterId) {
-          const page = new ChapterPage(chapter)
-          page.open()
-        }
-      })
-    })
+    console.log('%cApp initialized', 'color: #fff;background: #0a5d00;')
   }
 }
 
