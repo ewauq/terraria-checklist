@@ -1,12 +1,36 @@
 .action-bar {
   position: fixed;
   width: 100%;
-  padding: 10px;
+  height: $action-bar-height;
+  padding: $gap-tiny;
   background-color: white;
   z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+
+  button {
+    border: 0;
+    padding: $gap-tiny;
+    background-color: transparent;
+    height: 32px;
+    width: 32px;
+    opacity: 0.7;
+
+    &.drawer-toggle {
+      background: url('../../src/media/image/icon/menu.svg') no-repeat center center;
+    }
+    &.settings-toggle {
+      background: url('../../src/media/image/icon/settings.svg') no-repeat center center;
+    }
+
+    img {
+      opacity: 0.5;
+    }
+  }
 
   @include desktop {
     display: none;

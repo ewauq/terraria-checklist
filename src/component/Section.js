@@ -4,6 +4,7 @@ export default class Section {
   constructor(name, chapters) {
     this.name = name
     this.chapters = chapters
+    this.drawerNode = document.querySelector('div.drawer')
   }
 
   add(sectionsNode) {
@@ -18,6 +19,10 @@ export default class Section {
         {
           class: 'chapter',
           href: `#${chapter.id}`,
+          onclick: () => {
+            this.drawerNode.classList.remove('open')
+            window.scrollTo(0, 0)
+          },
         },
         `${chapter.name} (0/${itemsCount})`,
       )

@@ -7,6 +7,7 @@ export default class ActionBar {
   init() {
     this.drawerToggleButton.addEventListener('click', () => {
       this.drawerNode.classList.toggle('open')
+      window.scrollTo(0, 0)
     })
   }
 }
