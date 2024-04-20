@@ -14,9 +14,14 @@ export default class Section {
 
     this.chapters.map((chapter) => {
       const itemsCount = chapter.lines.filter((line) => !line.startsWith('~~')).length
+      const doneCount = Object.keys(localStorage).filter(
+        (key) => key.startsWith(chapter.id) && localStorage.getItem(key) === 'true',
+      ).length
+
       const chapterNode = createElement(
         'a',
         {
+          id: `chapter-${chapter.id}`,
           class: 'chapter',
           href: `#${chapter.id}`,
           onclick: () => {
@@ -24,8 +29,10 @@ export default class Section {
             window.scrollTo(0, 0)
           },
         },
-        `${chapter.name} (0/${itemsCount})`,
+        `${chapter.name} <span class="done-count">(${doneCount}/${itemsCount})</span>`,
       )
+
+      if (doneCount === itemsCount) chapterNode.classList.add('done')
       sectionChaptersNode.appendChild(chapterNode)
     })
     sectionNode.append(sectionHeadingNode, sectionChaptersNode)

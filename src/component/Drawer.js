@@ -6,7 +6,7 @@ export default class Drawer {
     this.sections = sections
   }
 
-  init() {
+  render() {
     this.sections.map((drawerSection) => {
       const section = new Section(drawerSection.name, drawerSection.chapters)
       section.add(this.sectionsNode)

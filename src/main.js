@@ -18,11 +18,38 @@ class App {
       return
     }
 
+    // Remove outdated local storage items
+    let linesIds = []
+    this.data.sections.map((section) => {
+      section.chapters.map((chapter) => {
+        const lines = chapter.lines.filter((line) => !line.startsWith('~~'))
+
+        linesIds = linesIds.concat(lines.map((_, index) => `${chapter.id}-${index}`))
+      })
+    })
+
+    Object.keys(localStorage).map((key) => {
+      if (!linesIds.includes(key)) {
+        localStorage.removeItem(key)
+      }
+    })
+
+    const resetButtonsNodes = document.querySelectorAll('.reset')
+
+    resetButtonsNodes.forEach((resetButton) => {
+      resetButton.addEventListener('click', () => {
+        const confirmation = confirm('Are you sure you want to reset your progression?')
+        if (!confirmation) return
+        localStorage.clear()
+        location.reload()
+      })
+    })
+
     const actionBar = new ActionBar()
     actionBar.init()
 
     const drawer = new Drawer(this.data.sections)
-    drawer.init()
+    drawer.render()
 
     const router = new Router(this.data)
     router.init()

@@ -26,20 +26,18 @@ export default class ChapterPage {
     const page = document.querySelector('.content')
 
     // Remove previous lines
-    const welcomeTextNode = document.querySelector('.content .welcome-text') // ?
     const pageLinesNode = document.querySelector('.content p')
-    if (welcomeTextNode) welcomeTextNode.remove()
     if (pageLinesNode) pageLinesNode.remove()
 
     // Add new lines
     const linesNode = createElement('p')
 
-    let lineIndex = 0
-    this.lines.map((line) => {
-      if (line.startsWith('~~')) lineIndex--
-      const newLine = new Line(`${this.id}-${lineIndex}`, line)
+    const linesCount = this.lines.filter((line) => !line.startsWith('~~')).length
+    const lines = this.lines.filter((line) => !line.startsWith('~~'))
+
+    lines.map((line, index) => {
+      const newLine = new Line(`${this.id}-${index}`, line, this.id, linesCount)
       newLine.add(linesNode)
-      lineIndex++
     })
 
     page.appendChild(linesNode)
