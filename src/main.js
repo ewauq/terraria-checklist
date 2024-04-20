@@ -41,7 +41,7 @@ class App {
         const confirmation = confirm('Are you sure you want to reset your progression?')
         if (!confirmation) return
         localStorage.clear()
-        location.reload()
+        location.href = '#journeys-beginning'
       })
     })
 
