@@ -33,11 +33,13 @@ export default class ChapterPage {
     const linesNode = createElement('p')
 
     const linesCount = this.lines.filter((line) => !line.startsWith('~~')).length
-    const lines = this.lines.filter((line) => !line.startsWith('~~'))
 
-    lines.map((line, index) => {
-      const newLine = new Line(`${this.id}-${index}`, line, this.id, linesCount)
+    let lineIndex = 0
+    this.lines.map((line) => {
+      if (line.startsWith('~~')) lineIndex--
+      const newLine = new Line(`${this.id}-${lineIndex}`, line, this.id, linesCount)
       newLine.add(linesNode)
+      lineIndex++
     })
 
     page.appendChild(linesNode)
