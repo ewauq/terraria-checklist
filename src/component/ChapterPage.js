@@ -9,6 +9,7 @@ export default class ChapterPage {
     this.background = chapter.background
     this.lines = chapter.lines
     this.description = chapter.description
+    this.notes = chapter.notes
   }
 
   setCover() {
@@ -26,12 +27,11 @@ export default class ChapterPage {
     const page = document.querySelector('.content')
 
     // Remove previous lines
-    const pageLinesNode = document.querySelector('.content p')
-    if (pageLinesNode) pageLinesNode.remove()
+    const pageLinesNodes = document.querySelectorAll('.content p')
+    pageLinesNodes.forEach((node) => node.remove())
 
     // Add new lines
     const linesNode = createElement('p')
-
     const linesCount = this.lines.filter((line) => !line.startsWith('~~')).length
 
     let lineIndex = 0
@@ -43,6 +43,12 @@ export default class ChapterPage {
     })
 
     page.appendChild(linesNode)
+
+    if (this.notes) {
+      const notesNode = createElement('p', { class: 'notes' })
+      notesNode.innerHTML = markdownToHtml(this.notes)
+      page.appendChild(notesNode)
+    }
   }
 
   setHomeDescription() {

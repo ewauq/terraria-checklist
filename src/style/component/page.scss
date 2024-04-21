@@ -62,6 +62,21 @@
       &.welcome-text {
         display: block;
       }
+      &.notes {
+        display: block;
+        padding: $gap-medium;
+        background-color: rgba(0, 0, 0, 0.05);
+        &::before {
+          vertical-align: top;
+          opacity: 0.7;
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          content: ' ';
+          background: url('../../src/media/image/icon/info.svg') no-repeat center center;
+          margin-right: $gap-small;
+        }
+      }
     }
   }
 }
