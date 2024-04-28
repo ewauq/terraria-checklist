@@ -3,7 +3,7 @@ import ChapterPage from './ChapterPage.js'
 export default class Router {
   constructor(data) {
     this.data = data
-    this.sections = data.sections
+    this.sections = [data.sections.adventure, data.sections.collection]
   }
 
   init() {

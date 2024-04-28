@@ -19,11 +19,12 @@ class App {
     }
 
     // Remove outdated local storage items
+    const sections = [this.data.sections.adventure, this.data.sections.collection]
     let linesIds = []
-    this.data.sections.map((section) => {
+
+    sections.map((section) => {
       section.chapters.map((chapter) => {
         const lines = chapter.lines.filter((line) => !line.startsWith('~~'))
-
         linesIds = linesIds.concat(lines.map((_, index) => `${chapter.id}-${index}`))
       })
     })

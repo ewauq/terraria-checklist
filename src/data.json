@@ -5,8 +5,8 @@
     "background": "url('media/image/artworks/home.png')",
     "description": "~~Welcome Terrarian! 👋~~<br/>This tool will walk you through the main content of Terraria 1.4 aka “Journey's End”. This list is obviously not exhaustive, because Terraria contains many random elements.<br/><br/>The document is primarily intended for experienced players. If you are a new to Terraria, I would rather advise you to follow your own adventure without this document which would spoil you much of the discoveries you could make. Terraria is an awesome game that deserve you take your time to explore it.<br/><br/>💾 Your progress is saved in your browser, you can close this page at any time and come back to it later.<br/><br/>🗑️ If you want to delete your checklist data, you can click on reset icon at the bottom of the left menu on desktop or at the top right on mobile."
   },
-  "sections": [
-    {
+  "sections": {
+    "adventure": {
       "name": "Adventure",
       "chapters": [
         {
@@ -279,19 +279,9 @@
             "🛡️ Gear up for the last time by taking a lot of [defensive potions](Potions#Buff_potions) and [ranged weapons](Ranged_weapons) (with [Chlorophyte Bullets](Chlorophyte_Bullet) for example) and by upgrading your [accessories](Accessories)",
             "{boss Moon Lord}(Moon_Lord): destroy the forth [Celestial Pillar](Celestial_Pillars) to summon the boss, then defeat him",
             "Farm the {boss Moon Lord}(Moon_Lord) to get powerfull weapons and some [luminite](Luminite) ores by summoning him with a [Celestial Sigil](Celestial_Sigil)",
-            "Upgrade your gear with [Nebula](Nebula_Fragment)/[Solar](Solar_Fragment)/[Stardust](Stardust_Fragment)/[Vortex](Vortex_Fragment) fragments and [luminite](Luminite) ores"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Extra",
-      "chapters": [
-        {
-          "id": "post-moon-lord",
-          "name": "Post Moon Lord",
-          "background": "#43576a",
-          "lines": [
+            "Upgrade your gear with [Nebula](Nebula_Fragment)/[Solar](Solar_Fragment)/[Stardust](Stardust_Fragment)/[Vortex](Vortex_Fragment) fragments and [luminite](Luminite) ores",
+
+            "~~🌈 Post Moon Lord~~",
             "Upgrade all [accessories](Accessories) and craft a [Cell Phone](Cell_Phone)",
             "Craft the mining mount [Drill Containment Unit](Drill_Containment_Unit)",
             "Reforge all items at the {npc Goblin Tinkerer}(Goblin_Tinkerer) to get the best [rarities](Rarity)",
@@ -312,7 +302,7 @@
         }
       ]
     },
-    {
+    "collection": {
       "name": "Collection",
       "chapters": [
         {
@@ -345,5 +335,5 @@
         }
       ]
     }
-  ]
+  }
 }
