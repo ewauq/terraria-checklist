@@ -1,0 +1,18 @@
+.display {
+  margin-top: $action-bar-height;
+  display: flex;
+  flex-grow: 1;
+  background-color: white;
+
+  font-family: $text-font-family;
+
+  @include desktop {
+    margin-top: 0;
+  }
+
+  @if ($DEBUG) {
+    $debug-color: red;
+    border: 2px solid $debug-color;
+    background-color: lighten($debug-color, 40%);
+  }
+}

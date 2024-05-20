@@ -12,6 +12,17 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
 
+  .title {
+    font-family: $big-text-font-family;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    @if ($DEBUG) {
+      $debug-color: rgb(0, 0, 255);
+      border: 2px solid $debug-color;
+    }
+  }
+
   button {
     border: 0;
     padding: $gap-tiny;
@@ -21,14 +32,20 @@
     opacity: 0.7;
 
     &.drawer-toggle {
-      background: url('../../src/media/image/icon/menu.svg') no-repeat center center;
+      background: url('/src/image/icon/menu.svg') no-repeat center center;
     }
-    &.reset {
-      background: url('../../src/media/image/icon/reset.svg') no-repeat center center;
+    &.dark-mode-toggle {
+      background: url('/src/image/icon/dark-mode.svg') no-repeat center center;
+      visibility: hidden;
     }
 
     img {
       opacity: 0.5;
+    }
+
+    @if ($DEBUG) {
+      $debug-color: rgb(0, 255, 0);
+      border: 2px solid $debug-color;
     }
   }
 

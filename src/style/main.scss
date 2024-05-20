@@ -1,10 +1,15 @@
-@import 'variables.scss';
+@import './reset.scss';
 
-@import 'reset.scss';
-@import 'common.scss';
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 
-// Components
-@import 'component/action-bar.scss';
-@import 'component/page.scss';
-@import 'component/drawer.scss';
-@import 'component/line.scss';
+  font-size: $global-font-size;
+  font-family: $global-font-family;
+  color: $color-black-coal;
+
+  @if ($DEBUG) {
+    border: 2px solid blue;
+  }
+}

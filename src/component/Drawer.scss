@@ -19,9 +19,18 @@
     @include opened;
   }
 
+  .logo {
+    display: none;
+    @include desktop {
+      display: block;
+    }
+  }
+
   .text-logo {
-    font-family: 'Bebas Neue';
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 210px;
   }
 
   .diminished {
@@ -37,6 +46,15 @@
     margin: 20px 0;
   }
 
+  hr {
+    height: 1px;
+    line-height: 1px;
+    width: 100%;
+    background-color: #eeeeee;
+    border: 0;
+    margin: 20px 0;
+  }
+
   a.reset {
     display: inline-block;
     color: $color-black-coal;
@@ -48,7 +66,7 @@
       width: 24px;
       height: 24px;
       content: ' ';
-      background: url('../../src/media/image/icon/reset.svg') no-repeat center center;
+      background: url('../image/icon/reset.svg') no-repeat center center;
       margin-right: 5px;
     }
     &:hover {

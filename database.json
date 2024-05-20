@@ -1,0 +1,229 @@
+{
+  "chapters": [
+    {
+      "id": 1,
+      "label": "I. Journey's Beginning",
+      "slug": "journeys-beginning",
+      "background": "#498e62",
+      "items": [
+        "🌄 Exploration & adventure",
+        {
+          "id": 1,
+          "text": "Gather resources to build a [house](House) with a [table](Tables), a [chair](Chairs), and a [door](Doors) for the {npc Guide}(Guide) to move in"
+        },
+        {
+          "id": 2,
+          "text": "Gather ores to improve your [tools](Tools), [armor](Armor) and [weapons](Weapons) with [silver](Silver_Ore)/[tungsten](Tungsten_Ore)"
+        },
+        {
+          "id": 3,
+          "text": "Explore [caverns](Cavern), find some [Life Crystals](Life_Crystal), and **consume a maximum of 4 of them for now**"
+        },
+        {
+          "id": 4,
+          "text": "Collect some [Fallen Stars](Fallen_Star) to craft some [Mana Crystals](Mana_Crystal) and use them to increase your mana (200 maximum)"
+        },
+        {
+          "id": 5,
+          "text": "Buy a [Piggy Bank](Piggy_Bank) from the {npc Merchant}(Merchant) and put your coins in it to save them from being lost on death"
+        },
+        {
+          "id": 6,
+          "text": "Craft a [Grappling Hook](Hooks#Grappling_Hook) to help you navigate the world more easily"
+        },
+        {
+          "id": 7,
+          "text": "Craft some [Spelunker Potions](Spelunker_Potion) to illuminates nearby ores, gems, chests and other valuable objects"
+        },
+        {
+          "id": 8,
+          "text": "Upgrade your gear with [gold](Gold_Ore)/[platinum](Platinum_Ore)"
+        },
+        {
+          "id": 9,
+          "text": "Unlock the NPCs (see below)"
+        },
+        {
+          "id": 10,
+          "text": "Defeat the boss (see below)"
+        },
+        "🧙 NPCs unlocks",
+        {
+          "id": 11,
+          "text": "Build a house for each of the following NPCs"
+        },
+        {
+          "id": 12,
+          "text": "{npc Merchant}(Merchant): get 50 silver [coins](Coins)"
+        },
+        {
+          "id": 13,
+          "text": "{npc Nurse}(Nurse): use a [Life Crystal](Life_Crystal)"
+        },
+        {
+          "id": 14,
+          "text": "{npc Demolitionist}(Demolitionist): get an [explosive](Explosives)"
+        },
+        {
+          "id": 15,
+          "text": "{npc Dye Trader}(Dye_Trader): find a [dye plant](Plants#Dye_plants)"
+        },
+        {
+          "id": 16,
+          "text": "{npc Stylist}(Stylist): free the NPC trapped in a [spiders nest](Spider_Nest)"
+        },
+        {
+          "id": 17,
+          "text": "{npc Angler}(Angler): talk to the sleeping NPC in the ocean biome"
+        },
+        {
+          "id": 18,
+          "text": "{npc Arms Dealer}(Arms_Dealer): find at least one [bullet](Bullets) or a bullet-firing [gun](Guns)"
+        },
+        {
+          "id": 19,
+          "text": "{npc Painter}(Painter): have encountered at least 8 town NPCs"
+        },
+        {
+          "id": 20,
+          "text": "{npc Dryad}(Dryad): defeat the {boss Eye of Cthulhu}(Eye_of_Cthulhu)"
+        },
+        "💀 Boss fight",
+        {
+          "id": 21,
+          "text": "🛡️ Gear up for the next fights ([weapons](Weapons), [potions](Potions) & [armor](Armor))"
+        },
+        {
+          "id": 22,
+          "text": "Increase your maximum mana to 200 if you use mana-consuming weapons"
+        },
+        {
+          "id": 23,
+          "text": "Increase your health points to 200 by using a fifth [Life Crystal](Life_Crystal)"
+        },
+        {
+          "id": 24,
+          "text": "{boss Eye of Cthulhu}(Eye_of_Cthulhu): unlock the boss spawning (at night) by having at least 200 HP and 4 town NPCs **or** by using a [Suspicious Looking Eye](Suspicious_Looking_Eye)"
+        },
+        {
+          "id": 25,
+          "text": "Farm the {boss Eye of Cthulhu}(Eye_of_Cthulhu) for [demonite](Demonite_Ore)/[crimtane](Crimtane_Ore) ores and upgrade your gear"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "II. The Corruption",
+      "slug": "the-corruption",
+      "background": "linear-gradient(135deg, rgba(73,50,87,1) 0%, rgba(73,50,87,1) 50%, rgba(93,31,26,1) 50%)",
+      "items": [
+        "🌄 Exploration & adventure",
+        {
+          "id": 26,
+          "text": "Get some [Purification Powder](Purification_Powder) by crafting it or by buying it from the {npc Dryad}(Dryad)"
+        },
+        {
+          "id": 27,
+          "text": "Defeat {boss Eater of Worlds}(Eater_of_Worlds)/{boss Brain of Cthulhu}(Brain_of_Cthulhu) to trigger a [meteor crash](Meteorite_(biome)) (50% chance) the next midnight (see below)"
+        },
+        {
+          "id": 28,
+          "text": "Mine completely the [meteorite](Meteorite) and upgrade your gear"
+        },
+        {
+          "id": 29,
+          "text": "Buy [Rocket Boots](Rocket_Boots) (5 gold coins) from the {npc Goblin Tinkerer}(Goblin_Tinkerer)"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "III. The Dungeon",
+      "slug": "the-dungeon",
+      "background": "#232322",
+      "items": []
+    },
+    {
+      "id": 4,
+      "label": "IV. The Hell",
+      "slug": "the-hell",
+      "background": "#d73f21",
+      "note": "The world will now enter Hardmode introducing new and powerful monsters and ores. Corruption will also spread much faster.",
+      "items": []
+    },
+    {
+      "id": 5,
+      "label": "V. The Hardmode",
+      "slug": "the-hardmode",
+      "background": "#27486f",
+      "items": []
+    },
+    {
+      "id": 6,
+      "label": "VI. The Mechanical Terrors",
+      "slug": "the-mechanical-terrors",
+      "background": "#000000",
+      "items": []
+    },
+    {
+      "id": 7,
+      "label": "VII. The Green Inferno",
+      "slug": "the-green-inferno",
+      "background": "#2f701a",
+      "note": "Defeating Plantera slows the corruption spread by 50%.",
+      "items": []
+    },
+    {
+      "id": 8,
+      "label": "VIII. The Ritual",
+      "slug": "the-ritual",
+      "background": "#381d14",
+      "note": "At night, summon all Mecanical Bosses and defeat them simultaneously to get a rare achievement.",
+      "items": []
+    },
+    {
+      "id": 9,
+      "label": "IX. The King of the Oceans",
+      "slug": "the-king-of-the-oceans",
+      "background": "#1544ba",
+      "items": []
+    },
+    {
+      "id": 10,
+      "label": "X. Journey’s End",
+      "slug": "journeys-end",
+      "background": "linear-gradient(135deg, rgba(255,54,0,1) 0%, rgba(255,54,0,1) 25%, rgba(224,0,149,1) 25%, rgba(224,0,149,1) 50%, rgba(43,56,181,1) 50%, rgba(43,56,181,1) 75%, rgba(0,54,49,1) 75%)",
+      "items": []
+    },
+    {
+      "id": 11,
+      "label": "Seasonal events",
+      "slug": "seasonal-events",
+      "background": "#91c9ff",
+      "items": []
+    }
+  ],
+  "collections": [
+    {
+      "id": 1,
+      "label": "Armors sets",
+      "slug": "armors-sets",
+      "background": "#535353",
+      "items": [
+        {
+          "id": 1,
+          "name": "Wood armor",
+          "pageName": "Wood_armor",
+          "imageFilename": "wood_armor"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Trophies & relics",
+      "slug": "trophies-relics",
+      "background": "linear-gradient(135deg, #896245 0%, #896245 50%, #b49e3f 50%)",
+      "items": []
+    }
+  ]
+}

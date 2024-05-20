@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "outDir": "./dist/",
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "es2017"
+  },
+  "exclude": ["node_modules", "backup"]
+}
