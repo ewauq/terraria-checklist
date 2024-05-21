@@ -30,7 +30,7 @@
     padding: $gap-small;
 
     h1 {
-      font-family: 'IBM Plex Sans Condensed';
+      font-family: $big-text-font-family;
       font-size: 30px;
       text-transform: uppercase;
       color: #fff;
@@ -49,6 +49,10 @@
       background-size: cover;
       background-position: center;
       height: 100px;
+
+      @include desktop {
+        height: 260px;
+      }
     }
   }
 

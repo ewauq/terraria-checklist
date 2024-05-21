@@ -29,6 +29,7 @@ const Drawer = ({ onPageSelected }: DrawerProps): JSX.Element => {
 
     if (chapters) location.href = '/'
     location.reload()
+    window.scrollTo(0, 0)
   }
 
   const handlePageSelected = (page: Chapter | Collection): void => {
@@ -39,8 +40,11 @@ const Drawer = ({ onPageSelected }: DrawerProps): JSX.Element => {
   return (
     <div className={`drawer ${openDrawer ? 'open' : ''}`}>
       <div className="logo">
-        <div className="text-logo">Terraria Progression Checklist</div>
-        <hr />
+        <img src="/src/image/logo/tree.png" />
+        <div className="logo-text">
+          <span>Progression</span>
+          <span>Checklist</span>
+        </div>
       </div>
       <div className="sections">
         <a href="index.html">Home</a>

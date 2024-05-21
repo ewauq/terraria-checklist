@@ -7,8 +7,6 @@
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.05);
 
-  font-family: $global-font-family;
-
   @mixin opened {
     display: block;
     min-width: $drawer-width;
@@ -21,16 +19,28 @@
 
   .logo {
     display: none;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    gap: $gap-small;
+
     @include desktop {
-      display: block;
+      display: flex;
     }
   }
 
-  .text-logo {
-    font-size: 20px;
-    font-weight: bold;
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    font-family: $big-text-font-family;
     text-transform: uppercase;
-    width: 210px;
+    justify-content: center;
+    gap: $gap-small;
+
+    span {
+      font-size: 26px;
+      line-height: 20px;
+    }
   }
 
   .diminished {

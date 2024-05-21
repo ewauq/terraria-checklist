@@ -24,7 +24,7 @@ const ActionBar = (): JSX.Element => {
   return (
     <div className="action-bar">
       <button className="drawer-toggle" onClick={handleDrawerMenuClick}></button>
-      <span className="title">Terraria Progression Checklist</span>
+      <span className="title">🌳 Progression Checklist ☀️</span>
       <button className="dark-mode-toggle" onClick={handleDarkModeClick}></button>
     </div>
   )
