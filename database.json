@@ -729,6 +729,12 @@
           "name": "Wood armor",
           "pageName": "Wood_armor",
           "imageFilename": "wood_armor"
+        },
+        {
+          "id": 2,
+          "name": "Rich Mahogany armor",
+          "pageName": "Rich_Mahogany_armor",
+          "imageFilename": "rich_mahogany_armor"
         }
       ]
     },

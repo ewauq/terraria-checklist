@@ -1,10 +1,11 @@
 import React from 'react'
 import { Chapter } from '../type/chapter'
+import { Page } from '../type/page'
 
 interface ChaptersSectionProps {
   title: string
   chapters: Chapter[]
-  onPageSelected: (chapter: Chapter) => void
+  onPageSelected: (page: Page) => void
 }
 
 const ChaptersSection = ({
@@ -13,7 +14,7 @@ const ChaptersSection = ({
   onPageSelected,
 }: ChaptersSectionProps): JSX.Element => {
   const handleChapterClick = (chapter: Chapter): void => {
-    onPageSelected(chapter)
+    onPageSelected({ type: 'chapter', content: chapter })
   }
 
   const getDoneItemsCount = (chapterId: number): number => {

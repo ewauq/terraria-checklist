@@ -1,8 +1,7 @@
 import React from 'react'
 import { useDatabase } from '../context/DatabaseContext'
 import { useDrawer } from '../context/DrawerContext'
-import { Chapter } from '../type/chapter'
-import { Collection } from '../type/collection'
+import { Page } from '../type/page'
 import ChaptersSection from './ChaptersSection'
 import Collections from './CollectionsSection'
 import './Drawer.scss'
@@ -11,7 +10,7 @@ import './Drawer.scss'
 const LAST_BUILD_DATE = __BUILD_DATE__
 
 interface DrawerProps {
-  onPageSelected: (page: Chapter | Collection) => void
+  onPageSelected: (page: Page) => void
   checkedItem?: string
 }
 
@@ -32,8 +31,8 @@ const Drawer = ({ onPageSelected }: DrawerProps): JSX.Element => {
     window.scrollTo(0, 0)
   }
 
-  const handlePageSelected = (page: Chapter | Collection): void => {
-    onPageSelected(page)
+  const handlePageSelected = (page: Page): void => {
+    onPageSelected({ type: page.type, content: page.content })
     setOpenDrawer(false)
   }
 
@@ -59,7 +58,7 @@ const Drawer = ({ onPageSelected }: DrawerProps): JSX.Element => {
           <Collections
             title="Collections"
             collections={collections}
-            onPageSelected={onPageSelected}
+            onPageSelected={handlePageSelected}
           />
         ) : null}
       </div>

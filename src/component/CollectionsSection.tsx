@@ -1,11 +1,11 @@
 import React from 'react'
-import { Chapter } from '../type/chapter'
 import { Collection } from '../type/collection'
+import { Page } from '../type/page'
 
 interface CollectionsSectionProps {
   title: string
   collections: Collection[]
-  onPageSelected: (chapter: Chapter) => void
+  onPageSelected: (page: Page) => void
 }
 
 const Collections = ({
@@ -13,8 +13,8 @@ const Collections = ({
   collections,
   onPageSelected,
 }: CollectionsSectionProps): JSX.Element => {
-  const handleCollectionClick = (chapter: Chapter): void => {
-    onPageSelected(chapter)
+  const handleCollectionClick = (collection: Collection): void => {
+    onPageSelected({ type: 'collection', content: collection })
   }
 
   return (

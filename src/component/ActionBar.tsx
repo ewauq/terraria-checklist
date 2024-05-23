@@ -1,19 +1,12 @@
 import React from 'react'
-import { useDatabase } from '../context/DatabaseContext'
 import { useDrawer } from '../context/DrawerContext'
 import './ActionBar.scss'
 
 const ActionBar = (): JSX.Element => {
   const { openDrawer, setOpenDrawer } = useDrawer()
-  const database = useDatabase()
-
-  if (!database) return <></>
-
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { chapters, collections } = database
 
   const handleDarkModeClick = (): void => {
-    //
+    // todo: implement dark mode
   }
 
   const handleDrawerMenuClick = (): void => {
