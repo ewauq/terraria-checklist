@@ -26,6 +26,12 @@
     }
   }
 
+  .items {
+    border: 1px solid green;
+    display: flex;
+    flex-direction: row;
+  }
+
   .cover {
     padding: $gap-small;
 

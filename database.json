@@ -724,6 +724,7 @@
       "slug": "armors-sets",
       "background": "#535353",
       "items": [
+        "🌳 Pre-Hardmode",
         {
           "id": 1,
           "name": "Wood armor",
@@ -735,7 +736,8 @@
           "name": "Rich Mahogany armor",
           "pageName": "Rich_Mahogany_armor",
           "imageFilename": "rich_mahogany_armor"
-        }
+        },
+        "🦄 Hardmode"
       ]
     },
     {

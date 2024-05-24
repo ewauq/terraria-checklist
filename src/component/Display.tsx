@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useDatabase } from '../context/DatabaseContext'
 import { Chapter } from '../type/chapter'
+import { Collection } from '../type/collection'
 import { Page as PageType } from '../type/page'
 import './Display.scss'
 import Drawer from './Drawer'
@@ -15,8 +16,12 @@ const Display = (): JSX.Element => {
     if (slug) {
       const sections = useDatabase()
       const chapter = sections?.chapters.find((chapter: Chapter) => chapter.slug === slug)
+      const collection = sections?.collections.find(
+        (collection: Collection) => collection.slug === slug,
+      )
 
       if (chapter) setPage({ type: 'chapter', content: chapter })
+      if (collection) setPage({ type: 'collection', content: collection })
     }
   }
 

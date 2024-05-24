@@ -4,12 +4,12 @@ import { Chapter } from '../type/chapter'
 import ChapterCategory from './ChapterCategory'
 import Line from './Line'
 
-interface PageProps {
+interface ChapterPageProps {
   page: Chapter | null | undefined
   onItemChecked: (localStorageKeyValue: string) => void
 }
 
-const ChapterPage = ({ page, onItemChecked }: PageProps): JSX.Element => {
+const ChapterPage = ({ page, onItemChecked }: ChapterPageProps): JSX.Element => {
   const { setOpenDrawer } = useDrawer()
 
   const handlePageClick = (): void => {
