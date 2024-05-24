@@ -44,7 +44,7 @@ const Item = ({ item, collectionId, onItemChecked }: ItemProps): JSX.Element => 
   return (
     <div className={`item ${isChecked ? 'done' : ''}`}>
       <div className="frame" onClick={handleItemClick}>
-        <img src={`/src/image/${folder[collectionId]}/${slug}.png`} />
+        <img src={`image/${folder[collectionId]}/${slug}.png`} />
       </div>
       <div className="item-text">
         <a href={`https://terraria.wiki.gg/wiki/${slug}`} target="_blank">

@@ -39,7 +39,7 @@ const Drawer = ({ onPageSelected }: DrawerProps): JSX.Element => {
   return (
     <div className={`drawer ${openDrawer ? 'open' : ''}`}>
       <div className="logo">
-        <img src="/image/logo/tree.png" />
+        <img src="image/logo/tree.png" />
         <div className="logo-text">
           <span>Progression</span>
           <span>Checklist</span>
