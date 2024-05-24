@@ -69,6 +69,19 @@ const Drawer = ({ onPageSelected }: DrawerProps): JSX.Element => {
       <hr />
       <div className="diminished">Game version 1.4.4.9</div>
       <div className="diminished">Last update on {LAST_BUILD_DATE}</div>
+      <br />
+      <div className="diminished">
+        Code by{' '}
+        <a href="https://github.com/ewauq/terraria-checklist" target="_blank">
+          ewauq
+        </a>
+      </div>
+      <div className="diminished">
+        Artwork by{' '}
+        <a href="https://www.deviantart.com/vsewolod/art/Terraria-World-730563825" target="_blank">
+          Vsewolod
+        </a>
+      </div>
     </div>
   )
 }
