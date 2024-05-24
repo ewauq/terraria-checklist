@@ -22,9 +22,8 @@ const Item = ({ item, collectionId, onItemChecked }: ItemProps): JSX.Element => 
   const [isChecked, setIsChecked] = React.useState<boolean>(false)
   const localStorageKey = `collection-${collectionId}-item-${item.id}`
 
-  const handleItemClick = (event: React.MouseEvent<HTMLDivElement>): void => {
-    // TODO
-    const state = true // temporary
+  const handleItemClick = (): void => {
+    const state = !isChecked
     localStorage.setItem(localStorageKey, state.toString())
     setIsChecked(state)
     onItemChecked(`${localStorageKey}-${state.toString()}`)
