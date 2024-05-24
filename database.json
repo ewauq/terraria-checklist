@@ -721,31 +721,546 @@
     {
       "id": 1,
       "label": "Armors sets",
-      "slug": "armors-sets",
+      "slug": "armors",
       "background": "#535353",
       "items": [
         "🌳 Pre-Hardmode",
         {
           "id": 1,
-          "name": "Wood armor",
-          "pageName": "Wood_armor",
-          "imageFilename": "wood_armor"
+          "name": "Mining armor"
         },
         {
           "id": 2,
-          "name": "Rich Mahogany armor",
-          "pageName": "Rich_Mahogany_armor",
-          "imageFilename": "rich_mahogany_armor"
+          "name": "Wood armor"
         },
-        "🦄 Hardmode"
+        {
+          "id": 3,
+          "name": "Rich Mahogany armor"
+        },
+        {
+          "id": 4,
+          "name": "Boreal Wood armor"
+        },
+        {
+          "id": 5,
+          "name": "Palm Wood armor"
+        },
+        {
+          "id": 6,
+          "name": "Ebonwood armor"
+        },
+        {
+          "id": 7,
+          "name": "Shadewood armor"
+        },
+        {
+          "id": 8,
+          "name": "Ash Wood armor"
+        },
+        {
+          "id": 9,
+          "name": "Rain armor"
+        },
+        {
+          "id": 10,
+          "name": "Snow armor"
+        },
+        {
+          "id": 11,
+          "name": "Angler armor"
+        },
+        {
+          "id": 12,
+          "name": "Cactus armor"
+        },
+        {
+          "id": 13,
+          "name": "Copper armor"
+        },
+        {
+          "id": 14,
+          "name": "Tin armor"
+        },
+        {
+          "id": 15,
+          "name": "Pumpkin armor"
+        },
+        {
+          "id": 16,
+          "name": "Ninja armor"
+        },
+        {
+          "id": 17,
+          "name": "Iron armor"
+        },
+        {
+          "id": 18,
+          "name": "Lead armor"
+        },
+        {
+          "id": 19,
+          "name": "Silver armor"
+        },
+        {
+          "id": 20,
+          "name": "Tungsten armor"
+        },
+        {
+          "id": 21,
+          "name": "Gold armor"
+        },
+        {
+          "id": 22,
+          "name": "Platinum armor"
+        },
+        {
+          "id": 23,
+          "name": "Fossil armor"
+        },
+        {
+          "id": 24,
+          "name": "Bee armor"
+        },
+        {
+          "id": 25,
+          "name": "Obsidian armor"
+        },
+        {
+          "id": 26,
+          "name": "Gladiator armor"
+        },
+        {
+          "id": 27,
+          "name": "Meteor armor"
+        },
+        {
+          "id": 28,
+          "name": "Jungle armor"
+        },
+        {
+          "id": 29,
+          "name": "Ancient Cobalt armor"
+        },
+        {
+          "id": 30,
+          "name": "Necro armor"
+        },
+        {
+          "id": 31,
+          "name": "Shadow armor"
+        },
+        {
+          "id": 32,
+          "name": "Ancient Shadow armor"
+        },
+        {
+          "id": 33,
+          "name": "Crimson armor"
+        },
+        {
+          "id": 34,
+          "name": "Molten armor"
+        },
+        "🦄 Hardmode",
+        {
+          "id": 35,
+          "name": "Pearlwood armor"
+        },
+        {
+          "id": 36,
+          "name": "Spider armor"
+        },
+        {
+          "id": 37,
+          "name": "Cobalt armor"
+        },
+        {
+          "id": 38,
+          "name": "Palladium armor"
+        },
+        {
+          "id": 39,
+          "name": "Mythril armor"
+        },
+        {
+          "id": 40,
+          "name": "Orichalcum armor"
+        },
+        {
+          "id": 41,
+          "name": "Adamantite armor"
+        },
+        {
+          "id": 42,
+          "name": "Titanium armor"
+        },
+        {
+          "id": 43,
+          "name": "Crystal Assassin armor"
+        },
+        {
+          "id": 44,
+          "name": "Frost armor"
+        },
+        {
+          "id": 45,
+          "name": "Forbidden armor"
+        },
+        {
+          "id": 46,
+          "name": "Squire armor"
+        },
+        {
+          "id": 47,
+          "name": "Monk armor"
+        },
+        {
+          "id": 48,
+          "name": "Huntress armor"
+        },
+        {
+          "id": 49,
+          "name": "Apprentice armor"
+        },
+        {
+          "id": 50,
+          "name": "Hallowed armor"
+        },
+        {
+          "id": 51,
+          "name": "Ancient Hallowed armor"
+        },
+        {
+          "id": 52,
+          "name": "Chlorophyte armor"
+        },
+        {
+          "id": 53,
+          "name": "Turtle armor"
+        },
+        {
+          "id": 54,
+          "name": "Tiki armor"
+        },
+        {
+          "id": 55,
+          "name": "Beetle armor"
+        },
+        {
+          "id": 56,
+          "name": "Shroomite armor"
+        },
+        {
+          "id": 57,
+          "name": "Spectre armor"
+        },
+        {
+          "id": 58,
+          "name": "Spooky armor"
+        },
+        {
+          "id": 59,
+          "name": "Valhalla Knight armor"
+        },
+        {
+          "id": 60,
+          "name": "Shinobi Infiltrator armor"
+        },
+        {
+          "id": 61,
+          "name": "Red Riding armor"
+        },
+        {
+          "id": 62,
+          "name": "Dark Artist armor"
+        },
+        {
+          "id": 63,
+          "name": "Solar Flare armor"
+        },
+        {
+          "id": 64,
+          "name": "Vortex armor"
+        },
+        {
+          "id": 65,
+          "name": "Nebula armor"
+        },
+        {
+          "id": 66,
+          "name": "Stardust armor"
+        }
       ]
     },
     {
       "id": 2,
-      "label": "Trophies & relics",
-      "slug": "trophies-relics",
-      "background": "linear-gradient(135deg, #896245 0%, #896245 50%, #b49e3f 50%)",
-      "items": []
+      "label": "Trophies",
+      "slug": "trophies",
+      "background": "#896245",
+      "items": [
+        "🌳 Pre-Hardmode",
+        {
+          "id": 67,
+          "name": "King Slime Trophy"
+        },
+        {
+          "id": 68,
+          "name": "Eye of Cthulhu Trophy"
+        },
+        {
+          "id": 69,
+          "name": "Eater of Worlds Trophy"
+        },
+        {
+          "id": 70,
+          "name": "Brain of Cthulhu Trophy"
+        },
+        {
+          "id": 71,
+          "name": "Queen Bee Trophy"
+        },
+        {
+          "id": 72,
+          "name": "Skeletron Trophy"
+        },
+        {
+          "id": 73,
+          "name": "Deerclops Trophy"
+        },
+        {
+          "id": 74,
+          "name": "Wall of Flesh Trophy"
+        },
+        "🦄 Hardmode",
+        {
+          "id": 75,
+          "name": "Queen Slime Trophy"
+        },
+        {
+          "id": 76,
+          "name": "Retinazer Trophy"
+        },
+        {
+          "id": 77,
+          "name": "Spazmatism Trophy"
+        },
+        {
+          "id": 78,
+          "name": "Destroyer Trophy"
+        },
+        {
+          "id": 79,
+          "name": "Skeletron Prime Trophy"
+        },
+        {
+          "id": 80,
+          "name": "Plantera Trophy"
+        },
+        {
+          "id": 81,
+          "name": "Golem Trophy"
+        },
+        {
+          "id": 82,
+          "name": "Empress of Light Trophy"
+        },
+        {
+          "id": 83,
+          "name": "Duke Fishron Trophy"
+        },
+        {
+          "id": 84,
+          "name": "Lunatic Cultist Trophy"
+        },
+        {
+          "id": 85,
+          "name": "Moon Lord Trophy"
+        },
+        "📅 Events",
+
+        {
+          "id": 86,
+          "name": "Dark Mage Trophy"
+        },
+        {
+          "id": 87,
+          "name": "Ogre Trophy"
+        },
+        {
+          "id": 88,
+          "name": "Betsy Trophy"
+        },
+        {
+          "id": 89,
+          "name": "Mourning Wood Trophy"
+        },
+        {
+          "id": 90,
+          "name": "Pumpking Trophy"
+        },
+        {
+          "id": 91,
+          "name": "Everscream Trophy"
+        },
+        {
+          "id": 92,
+          "name": "Santa-NK1 Trophy"
+        },
+        {
+          "id": 93,
+          "name": "Ice Queen Trophy"
+        },
+        {
+          "id": 94,
+          "name": "Flying Dutchman Trophy"
+        },
+        {
+          "id": 95,
+          "name": "Martian Saucer Trophy"
+        },
+        "🎣 Fishing",
+        {
+          "id": 96,
+          "name": "Goldfish Trophy"
+        },
+        {
+          "id": 97,
+          "name": "Bunnyfish Trophy"
+        },
+        {
+          "id": 98,
+          "name": "Swordfish Trophy"
+        },
+        {
+          "id": 99,
+          "name": "Sharkteeth Trophy"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Relics",
+      "slug": "relics",
+      "background": "#b49e3f",
+      "items": [
+        "🌳 Pre-Hardmode",
+        {
+          "id": 100,
+          "name": "King Slime Relic"
+        },
+        {
+          "id": 101,
+          "name": "Eye of Cthulhu Relic"
+        },
+        {
+          "id": 102,
+          "name": "Eater of Worlds Relic"
+        },
+        {
+          "id": 103,
+          "name": "Brain of Cthulhu Relic"
+        },
+        {
+          "id": 104,
+          "name": "Queen Bee Relic"
+        },
+        {
+          "id": 105,
+          "name": "Skeletron Relic"
+        },
+        {
+          "id": 106,
+          "name": "Deerclops Relic"
+        },
+        {
+          "id": 107,
+          "name": "Wall of Flesh Relic"
+        },
+        "🦄 Hardmode",
+
+        {
+          "id": 108,
+          "name": "Queen Slime Relic"
+        },
+        {
+          "id": 109,
+          "name": "Twins Relic"
+        },
+        {
+          "id": 110,
+          "name": "Destroyer Relic"
+        },
+        {
+          "id": 111,
+          "name": "Skeletron Prime Relic"
+        },
+        {
+          "id": 112,
+          "name": "Plantera Relic"
+        },
+        {
+          "id": 113,
+          "name": "Golem Relic"
+        },
+        {
+          "id": 114,
+          "name": "Empress of Light Relic"
+        },
+        {
+          "id": 115,
+          "name": "Duke Fishron Relic"
+        },
+        {
+          "id": 116,
+          "name": "Lunatic Cultist Relic"
+        },
+        {
+          "id": 117,
+          "name": "Moon Lord Relic"
+        },
+        "📅 Events",
+        {
+          "id": 118,
+          "name": "Dark Mage Relic"
+        },
+        {
+          "id": 120,
+          "name": "Ogre Relic"
+        },
+        {
+          "id": 121,
+          "name": "Betsy Relic"
+        },
+        {
+          "id": 122,
+          "name": "Mourning Wood Relic"
+        },
+        {
+          "id": 123,
+          "name": "Pumpking Relic"
+        },
+        {
+          "id": 124,
+          "name": "Everscream Relic"
+        },
+        {
+          "id": 125,
+          "name": "Santa-NK1 Relic"
+        },
+        {
+          "id": 126,
+          "name": "Ice Queen Relic"
+        },
+
+        {
+          "id": 127,
+          "name": "Flying Dutchman Relic"
+        },
+        {
+          "id": 128,
+          "name": "Martian Saucer Relic"
+        }
+      ]
     }
   ]
 }

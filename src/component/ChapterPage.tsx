@@ -21,7 +21,7 @@ const ChapterPage = ({ page, onItemChecked }: ChapterPageProps): JSX.Element => 
       <div className="cover" style={{ background: page?.background }}>
         <h1>{page?.label}</h1>
       </div>
-      <div className="lines">
+      <div className="content chapter">
         {page?.items.map((item, index) => {
           if (typeof item === 'string') return <ChapterCategory key={index} title={item} />
           return (

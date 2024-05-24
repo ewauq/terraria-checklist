@@ -6,6 +6,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "noImplicitAny": true,
+    "noUnusedLocals": false,
     "outDir": "./dist/",
     "resolveJsonModule": true,
     "strict": true,

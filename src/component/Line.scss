@@ -9,17 +9,6 @@
     display: inline;
     line-height: 24px;
     max-width: 830px;
-
-    a {
-      color: $color-blue-link;
-      font-size: 16px;
-      padding-bottom: 3px;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
   }
 
   &.done {

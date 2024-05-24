@@ -4,6 +4,7 @@ import { useDrawer } from '../context/DrawerContext'
 const handleStartButtonClick = (): void => {
   location.href = '#journeys-beginning'
   location.reload()
+  window.scrollTo(0, 0)
 }
 
 const HomePage = (): JSX.Element => {
@@ -19,7 +20,7 @@ const HomePage = (): JSX.Element => {
         className="cover home"
         style={{ backgroundImage: "url('image/artwork/home.png')" }}
       ></div>
-      <div className="lines">
+      <div className="content">
         <h3>Welcome Terrarian! 👋</h3>
         <p>
           This tool is a passion project created to help you track your overall progress in

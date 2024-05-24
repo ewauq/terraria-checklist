@@ -20,16 +20,16 @@ const CollectionPage = ({ page, onItemChecked }: ColletionPageProps): JSX.Elemen
       <div className="cover" style={{ background: page?.background }}>
         <h1>{page?.label}</h1>
       </div>
-      <div className="items">
+
+      <div className="content collection">
         {page?.items.map((item, index) => {
-          if (typeof item === 'string') return <>{item}</>
-          return <Item key={index} item={item} />
+          if (typeof item === 'string') return <h3 key={index}>{item}</h3>
+
+          return (
+            <Item key={index} item={item} collectionId={page.id} onItemChecked={onItemChecked} />
+          )
         })}
       </div>
-      {/* <div className="lines">
-
-      </div>
-      {page?.note && <div className="notes">{page.note}</div>} */}
     </div>
   )
 }

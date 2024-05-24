@@ -12,3 +12,12 @@
     border: 2px solid blue;
   }
 }
+
+a {
+  color: $color-blue-link;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

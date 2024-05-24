@@ -1,37 +1,6 @@
 .page {
   width: 100%;
 
-  .lines {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    margin: $gap-large;
-
-    @include desktop {
-      margin: $gap-xlarge;
-    }
-
-    @if ($DEBUG) {
-      $debug-color: rgb(123, 255, 0);
-      border: 2px solid $debug-color;
-      background-color: lighten($debug-color, 40%);
-    }
-
-    & > .line:first-of-type h3 {
-      margin-top: 0;
-    }
-
-    &.welcome-text {
-      display: block;
-    }
-  }
-
-  .items {
-    border: 1px solid green;
-    display: flex;
-    flex-direction: row;
-  }
-
   .cover {
     padding: $gap-small;
 
@@ -59,6 +28,46 @@
       @include desktop {
         height: 260px;
       }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: $gap-large;
+    margin: $gap-large;
+
+    @include desktop {
+      margin: $gap-xlarge;
+    }
+
+    &.chapter {
+      flex-direction: column;
+    }
+
+    &.collection {
+      flex-direction: row;
+      justify-content: center;
+
+      @include desktop {
+        justify-content: flex-start;
+      }
+
+    }
+
+    h3 {
+      width: 100%;
+    }
+
+    & > .line:first-of-type h3 {
+      margin-top: 0;
+    }
+
+    @if ($DEBUG) {
+      $debug-color: rgb(123, 255, 0);
+      border: 2px solid $debug-color;
+      background-color: lighten($debug-color, 40%);
     }
   }
 
@@ -92,9 +101,8 @@
     font-family: $big-text-font-family;
     font-size: 24px;
     text-transform: uppercase;
-
     margin-top: 20px;
-
     box-shadow: 0 10px darken(#1976d2, 10%);
+    width: 100%;
   }
 }
