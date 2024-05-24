@@ -18,7 +18,7 @@ const HomePage = (): JSX.Element => {
     <div className="page" onClick={handlePageClick}>
       <div
         className="cover home"
-        style={{ backgroundImage: "url('image/artwork/home.png')" }}
+        style={{ backgroundImage: "url('image/artwork/home.jpg')" }}
       ></div>
       <div className="content">
         <h3>Welcome Terrarian! 👋</h3>
