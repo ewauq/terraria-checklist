@@ -33,6 +33,7 @@ const Drawer = ({ onPageSelected }: DrawerProps): JSX.Element => {
 
   const handlePageSelected = (page: Page): void => {
     onPageSelected({ type: page.type, content: page.content })
+    window.scrollTo(0, 0)
     setOpenDrawer(false)
   }
 
