@@ -77,12 +77,34 @@
     }
   }
 
-  hr {
-    height: 1px;
-    line-height: 1px;
-    background-color: #eeeeee;
-    border: 0;
-    margin: $gap-large;
+  .danger-zone {
+    margin: $gap-large 0 $gap-large 0;
+
+    @mixin strip {
+      content: ' ';
+      height: 6px;
+      display: block;
+      background-image: url('../image/icon/strips.png');
+    }
+
+    &::before,
+    &::after {
+      @include strip;
+    }
+
+    a.reset {
+      @include link-block;
+      margin: $gap-small 0;
+
+      &::before {
+        @include ornament('reset');
+      }
+
+      &:hover {
+        background-color: #ffe9e9;
+        color: #d32f2f;
+      }
+    }
   }
 
   .sections {
@@ -105,12 +127,6 @@
     margin-top: $gap-large;
     &::before {
       @include ornament('home');
-    }
-  }
-  a.reset {
-    @include link-block;
-    &::before {
-      @include ornament('reset');
     }
   }
 

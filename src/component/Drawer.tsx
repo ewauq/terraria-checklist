@@ -71,11 +71,11 @@ const Drawer = ({ onPageSelected }: DrawerProps): JSX.Element => {
             />
           ) : null}
         </div>
-        <hr />
-        <a className="reset" onClick={handleResetClick}>
-          Reset progression
-        </a>
-        <hr />
+        <div className="danger-zone">
+          <a className="reset" onClick={handleResetClick}>
+            Reset progression
+          </a>
+        </div>
         <div className="diminished">Game version 1.4.4.9</div>
         <div className="diminished">Last update on {LAST_BUILD_DATE}</div>
         <br />
