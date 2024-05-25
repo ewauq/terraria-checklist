@@ -1,7 +1,8 @@
 $DEBUG: false;
 
 $action-bar-height: 50px;
-$drawer-width: 280px;
+$drawer-width-desktop: 300px;
+$drawer-width-mobile: 280px;
 
 $small-font-size: 14px;
 $global-font-size: 16px;
@@ -17,6 +18,10 @@ $gap-xlarge: 40px;
 $color-black-coal: rgba(0, 0, 0, 0.8);
 $color-black-coal-light: rgba(0, 0, 0, 0.4);
 $color-blue-link: rgb(57, 112, 215);
+$color-green-dark: rgb(52, 129, 55);
+$color-green: rgb(126, 196, 136);
+$color-red: rgb(198, 58, 58);
+$color-blue: rgb(57, 112, 215);
 
 @mixin desktop {
   @media only screen and (min-width: 600px) {

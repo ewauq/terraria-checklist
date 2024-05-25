@@ -53,15 +53,15 @@
     font-size: 0;
 
     &.npc a {
-      border-bottom: 2px solid rgb(126, 196, 136);
+      border-bottom: 2px solid $color-green;
     }
 
     &.boss a {
-      border-bottom: 2px solid rgb(198, 58, 58);
+      border-bottom: 2px solid $color-red;
     }
 
     &.event a {
-      border-bottom: 2px solid rgb(57, 112, 215);
+      border-bottom: 2px solid $color-blue;
     }
 
     a {

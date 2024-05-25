@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Chapter } from '../type/chapter'
 import { Page } from '../type/page'
 
@@ -13,8 +13,17 @@ const ChaptersSection = ({
   chapters,
   onPageSelected,
 }: ChaptersSectionProps): JSX.Element => {
+  const [currentPage, setCurrentPage] = useState<number | null>(null)
+
+  useEffect(() => {
+    const slug = location.hash.replace('#', '')
+    const chapter = chapters.find((chapter) => chapter.slug === slug)
+    if (chapter) setCurrentPage(chapter.id)
+  }, [chapters])
+
   const handleChapterClick = (chapter: Chapter): void => {
     onPageSelected({ type: 'chapter', content: chapter })
+    setCurrentPage(chapter.id)
   }
 
   const getDoneItemsCount = (chapterId: number): number => {
@@ -32,14 +41,19 @@ const ChaptersSection = ({
         {chapters.map((chapter) => {
           const doneItemsCount = getDoneItemsCount(chapter.id)
           const itemsCount = chapter.items.filter((item) => typeof item === 'object').length
+
+          let linkClasses = []
+          if (doneItemsCount === itemsCount) linkClasses.push('done')
+          if (currentPage === chapter.id) linkClasses.push('active')
+
           return (
             <a
               key={chapter.id}
               href={`#${chapter.slug}`}
               onClick={() => handleChapterClick(chapter)}
-              className={doneItemsCount === itemsCount ? 'done' : ''}
+              className={linkClasses.join(' ')}
             >
-              {chapter.label}{' '}
+              {chapter.label}
               <span className="done-count">
                 ({doneItemsCount}/{itemsCount})
               </span>
