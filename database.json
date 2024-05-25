@@ -1,0 +1,1266 @@
+{
+  "chapters": [
+    {
+      "id": 1,
+      "label": "I. Journey's Beginning",
+      "slug": "journeys-beginning",
+      "background": "#498e62",
+      "items": [
+        "🌄 Exploration & adventure",
+        {
+          "id": 1,
+          "text": "Gather resources to build a [house](House) with a [table](Tables), a [chair](Chairs), and a [door](Doors) for the {npc Guide}(Guide) to move in"
+        },
+        {
+          "id": 2,
+          "text": "Gather ores to improve your [tools](Tools), [armor](Armor) and [weapons](Weapons) with [silver](Silver_Ore)/[tungsten](Tungsten_Ore)"
+        },
+        {
+          "id": 3,
+          "text": "Explore [caverns](Cavern), find some [Life Crystals](Life_Crystal), and **consume a maximum of 4 of them for now**"
+        },
+        {
+          "id": 4,
+          "text": "Collect some [Fallen Stars](Fallen_Star) to craft some [Mana Crystals](Mana_Crystal) and use them to increase your mana (200 maximum)"
+        },
+        {
+          "id": 5,
+          "text": "Buy a [Piggy Bank](Piggy_Bank) from the {npc Merchant}(Merchant) and put your coins in it to save them from being lost on death"
+        },
+        {
+          "id": 6,
+          "text": "Craft a [Grappling Hook](Hooks#Grappling_Hook) to help you navigate the world more easily"
+        },
+        {
+          "id": 7,
+          "text": "Craft some [Spelunker Potions](Spelunker_Potion) to illuminates nearby ores, gems, chests and other valuable objects"
+        },
+        {
+          "id": 8,
+          "text": "Upgrade your gear with [gold](Gold_Ore)/[platinum](Platinum_Ore)"
+        },
+        {
+          "id": 9,
+          "text": "Unlock the NPCs (see below)"
+        },
+        {
+          "id": 10,
+          "text": "Defeat the boss (see below)"
+        },
+        "🧙 NPCs unlocks",
+        {
+          "id": 11,
+          "text": "Build a house for each of the following NPCs"
+        },
+        {
+          "id": 12,
+          "text": "{npc Merchant}(Merchant): get 50 silver [coins](Coins)"
+        },
+        {
+          "id": 13,
+          "text": "{npc Nurse}(Nurse): use a [Life Crystal](Life_Crystal)"
+        },
+        {
+          "id": 14,
+          "text": "{npc Demolitionist}(Demolitionist): get an [explosive](Explosives)"
+        },
+        {
+          "id": 15,
+          "text": "{npc Dye Trader}(Dye_Trader): find a [dye plant](Plants#Dye_plants)"
+        },
+        {
+          "id": 16,
+          "text": "{npc Stylist}(Stylist): free the NPC trapped in a [spiders nest](Spider_Nest)"
+        },
+        {
+          "id": 17,
+          "text": "{npc Angler}(Angler): talk to the sleeping NPC in the ocean biome"
+        },
+        {
+          "id": 18,
+          "text": "{npc Arms Dealer}(Arms_Dealer): find at least one [bullet](Bullets) or a bullet-firing [gun](Guns)"
+        },
+        {
+          "id": 19,
+          "text": "{npc Painter}(Painter): have encountered at least 8 town NPCs"
+        },
+        {
+          "id": 20,
+          "text": "{npc Dryad}(Dryad): defeat the {boss Eye of Cthulhu}(Eye_of_Cthulhu)"
+        },
+        "💀 Boss fight",
+        {
+          "id": 21,
+          "text": "🛡️ Gear up for the next fights ([weapons](Weapons), [potions](Potions) & [armor](Armor))"
+        },
+        {
+          "id": 22,
+          "text": "Increase your maximum mana to 200 if you use mana-consuming weapons"
+        },
+        {
+          "id": 23,
+          "text": "Increase your health points to 200 by using a fifth [Life Crystal](Life_Crystal)"
+        },
+        {
+          "id": 24,
+          "text": "{boss Eye of Cthulhu}(Eye_of_Cthulhu): unlock the boss spawning (at night) by having at least 200 HP and 4 town NPCs **or** by using a [Suspicious Looking Eye](Suspicious_Looking_Eye)"
+        },
+        {
+          "id": 25,
+          "text": "Farm the {boss Eye of Cthulhu}(Eye_of_Cthulhu) for [demonite](Demonite_Ore)/[crimtane](Crimtane_Ore) ores and upgrade your gear"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "II. The Corruption",
+      "slug": "the-corruption",
+      "background": "linear-gradient(135deg, rgba(73,50,87,1) 0%, rgba(73,50,87,1) 50%, rgba(93,31,26,1) 50%)",
+      "items": [
+        "🌄 Exploration & adventure",
+        {
+          "id": 26,
+          "text": "Get some [Purification Powder](Purification_Powder) by crafting it or by buying it from the {npc Dryad}(Dryad)"
+        },
+        {
+          "id": 27,
+          "text": "Defeat {boss Eater of Worlds}(Eater_of_Worlds)/{boss Brain of Cthulhu}(Brain_of_Cthulhu) to trigger a [meteor crash](Meteorite_(biome)) (50% chance) the next midnight (see below)"
+        },
+        {
+          "id": 28,
+          "text": "Mine completely the [meteorite](Meteorite) and upgrade your gear"
+        },
+        {
+          "id": 29,
+          "text": "Buy [Rocket Boots](Rocket_Boots) (5 gold coins) from the {npc Goblin Tinkerer}(Goblin_Tinkerer)"
+        },
+        {
+          "id": 30,
+          "text": "Upgrade the weapons and gear [rarity](Rarity) by reforging them at the {npc Goblin Tinkerer}(Goblin_Tinkerer)"
+        },
+        {
+          "id": 31,
+          "text": "Increase your health points to 400 by using [Life Crystals](Life_Crystal)"
+        },
+        {
+          "id": 32,
+          "text": "Defeat the bosses (see below)"
+        },
+        {
+          "id": 33,
+          "text": "Destroy all [Shadow Orbs](Shadow_Orb)/[Crimson Hearts](Crimson_Heart) to farm the boss and meteorites"
+        },
+        {
+          "id": 34,
+          "text": "Upgrade your gear with [demonite](Demonite)/[crimtane](Crimtane)"
+        },
+        {
+          "id": 35,
+          "text": "Unlock the NPCs (see below)"
+        },
+        "🧙 NPCs unlocks",
+        {
+          "id": 36,
+          "text": "{npc Golfer}(Golfer): talk to him in the [Underground Desert](Underground_Desert)"
+        },
+        {
+          "id": 37,
+          "text": "{npc Zoologist}(Zoologist): have at least 10% of the [bestiary](Bestiary) filled (54 entries)"
+        },
+        {
+          "id": 38,
+          "text": "{npc Goblin Tinkerer}(Goblin_Tinkerer): defeat the {event Goblin Army}(Goblin_Army) and find the lost NPC in [caverns](Cavern)"
+        },
+        {
+          "id": 39,
+          "text": "{npc Tavernkeep}(Tavernkeep): defeat {boss Eater of Worlds}(Eater_of_Worlds)/{boss Brain of Cthulhu}(Brain_of_Cthulhu) and find the Unconscious Man NPC in any layer of the world"
+        },
+        {
+          "id": 40,
+          "text": "{npc Party Girl}(Party_Girl): have at least 14 town NPCs"
+        },
+        "💀 Boss fights",
+        {
+          "id": 41,
+          "text": "🛡️ Gear up for the next fights ([weapons](Weapons), [potions](Potions) & [armor](Armor))"
+        },
+        {
+          "id": 42,
+          "text": "Prepare a large and flat area at the surface for the next boss fight"
+        },
+        {
+          "id": 43,
+          "text": "{boss Eater of Worlds}(Eater_of_Worlds)/{boss Brain of Cthulhu}(Brain_of_Cthulhu): destroy 3 [Shadow Orbs](Shadow_Orb)/[Crimson Hearts](Crimson_Heart) to summon the boss, then defeat it"
+        },
+        {
+          "id": 44,
+          "text": "{boss King Slime}(King_Slime): summon the boss by using a [Slime Crown](Slime_Crown), **or** by killing 150 [slimes](Slimes) during the {event Slime Rain}(Slime_Rain) event"
+        },
+        "📅 Event triggers",
+        {
+          "id": 45,
+          "text": "{event Blood Moon}(Blood_Moon): have at least 120 HP to unlock the event (triggers randomly at night)"
+        },
+        {
+          "id": 46,
+          "text": "{event Goblin Army}(Goblin_Army): destroy at least one [Shadow Orb](Shadow_Orb)/[Crimson Heart](Crimson_Heart) and have at least 200 HP (triggers only on daytime)"
+        },
+        {
+          "id": 47,
+          "text": "Get some mobility equipment ([Rocket Boots](Rocket_Boots), [Grappling Hook](Hooks#Grappling_Hook), [Mounts](Mounts), etc.) and craft 101 [torches](Torches)"
+        },
+        {
+          "id": 48,
+          "text": "{event The Torch God}(The_Torch_God): in the [Underground](Underground) layer, prepare a large squared area and place 101 torches in it to trigger the event. Surviving the event will reward you with the [Torch God's Favor](Torch_God's_Favor)"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "III. The Dungeon",
+      "slug": "the-dungeon",
+      "background": "#232322",
+      "items": [
+        "🌄 Exploration & adventure",
+        {
+          "id": 49,
+          "text": "Craft a [Phaseblade](Phaseblades) (15 meteorite bars and 10 gems)"
+        },
+        {
+          "id": 50,
+          "text": "Isolate the NPCs from the corruption by creating a [6-blocks wide trench](Guide:Maintaining_world_purity#Pre-Hardmode) around their houses"
+        },
+        {
+          "id": 51,
+          "text": "Upgrade your [Rocket Boots](Rocket_Boots) and the other accessories at [Tinkerer's Workshop](Tinkerer's_Workshop) if possible"
+        },
+        {
+          "id": 52,
+          "text": "Defeat the bosses (see below)"
+        },
+        {
+          "id": 53,
+          "text": "Unlock the NPCs (see below)"
+        },
+        {
+          "id": 54,
+          "text": "Explore the [dungeon](Dungeon) completely: open a maximum of golden chests, collect an [Alchemy Table](Alchemy_Table) and a [Bewitching Table](Bewitching_Table)"
+        },
+        "🧙 NPCs unlocks",
+        {
+          "id": 55,
+          "text": "{npc Witch Doctor}(Witch_Doctor): defeat the {boss Queen Bee}(Queen_Bee)"
+        },
+        {
+          "id": 56,
+          "text": "{npc Clothier}(Clothier): defeat the {boss Skeletron}(Skeletron)"
+        },
+        {
+          "id": 57,
+          "text": "{npc Mechanic}(Mechanic): talk to the Bound Mechanic in the dungeon"
+        },
+        "💀 Boss fights",
+        {
+          "id": 58,
+          "text": "🛡️ Gear up for the next fights ([weapons](Weapons), [potions](Potions) & [armor](Armor))"
+        },
+        {
+          "id": 59,
+          "text": "Find a [giant hive](Bee_Hive_(biome)) in the jungle biome"
+        },
+        {
+          "id": 60,
+          "text": "{boss Queen Bee}(Queen_Bee): destroy the hive [larva](Larva) to summon the boss, then defeat her"
+        },
+        {
+          "id": 61,
+          "text": "{boss Skeletron}(Skeletron): talk to the {npc Old Man}(Old_Man) at the dungeon entrance **at night** to summon the boss, then defeat it"
+        },
+        "📅 Event triggers",
+        {
+          "id": 62,
+          "text": "Prepare a [large and flat area at the surface](Old_One's_Army#Terrain_requirements) (124 blocks), summon some [sentries](Ballista_sentry_summons) and put an [Eternia Crystal Stand](Eternia_Crystal_Stand) in the middle of it"
+        },
+        {
+          "id": 63,
+          "text": "{event Old One's Army}(Old_One's_Army): put an [Eternia Crystal](Eternia_Crystal) in the [Eternia Crystal Stand](Eternia_Crystal_Stand) and survive until wave 5"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "IV. The Underworld",
+      "slug": "the-underworld",
+      "background": "#d73f21",
+      "note": "The world will now enter Hardmode introducing new and powerful monsters and ores. Corruption will also spread much faster.",
+      "items": [
+        "🌄 Exploration & adventure",
+        {
+          "id": 64,
+          "text": "Craft an [Obsidian Skull](Obsidian_Skull) (20 [obsidian](Obsidian)) to be immune to fire damage"
+        },
+        {
+          "id": 65,
+          "text": "Craft some [Obsidian Skin Potions](Obsidian_Skin_Potion) to be able to swim in lava"
+        },
+        {
+          "id": 66,
+          "text": "Go to the [Underworld layer](The_Underworld) and gather a maximum of [hellstone](Hellstone)"
+        },
+        {
+          "id": 67,
+          "text": "Upgrade your gear with [hellstone](Hellstone): 300 [hellstone](Hellstone) and 100 [obsidian](Obsidian) to upgrade to [Molten armor set](Molten_armor), [tools](Hellstone_Bar#Used_in) and the [Volcano sword](Volcano)"
+        },
+        {
+          "id": 68,
+          "text": "Explore completely the Underworld layer by getting a [Hellforge](Hellforge) and opening all [Shadow Chests](Shadow_Chest)"
+        },
+        {
+          "id": 69,
+          "text": "Get some [Guide Voodoo Doll](Guide_Voodoo_Doll) by killing [Voodoo Demons](Voodoo_Demon)"
+        },
+        {
+          "id": 70,
+          "text": "Defeat the boss (see below)"
+        },
+        "📅 Event trigger",
+        {
+          "id": 71,
+          "text": "{event Old One's Army}(Old_One's_Army): reach wave 5 if you haven't already before entering in Hardmode"
+        },
+        "💀 Boss fights",
+        {
+          "id": 72,
+          "text": "Prepare a very large and flat area above the lava for the next boss fight"
+        },
+        {
+          "id": 73,
+          "text": "🛡️ Gear up for the next fights ([weapons](Weapons), [potions](Potions) & [armor](Armor))"
+        },
+        {
+          "id": 74,
+          "text": "{boss Wall of Flesh}(Wall_of_Flesh) throw a [Guide Voodoo Doll](Guide_Voodoo_Doll) in the lava (to the left to make the boss spawn from the left and vice versa), then defeat the boss"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "V. The Hardmode",
+      "slug": "the-hardmode",
+      "background": "#27486f",
+      "items": [
+        "🌄 Exploration & adventure",
+        {
+          "id": 75,
+          "text": "Farm the {boss Wall of Flesh}(Wall_of_Flesh) as many times as necessary to get the [Pwnhammer](Pwnhammer) and the [Emblems](Emblem)"
+        },
+        {
+          "id": 76,
+          "text": "Destroy the [altars](Altars) in corrupted biomes with the [Pwnhammer](Pwnhammer) to spawn new ores"
+        },
+        {
+          "id": 77,
+          "text": "Explore the undergrounds and gather some [cobalt](Cobalt_Ore)/[palladium](Palladium_Ore)"
+        },
+        {
+          "id": 78,
+          "text": "Upgrade your gear and tools with [cobalt](Cobalt_Ore)/[palladium](Palladium_Ore)"
+        },
+        {
+          "id": 79,
+          "text": "Upgrade your gear and tools with [mythril](Mythril_Ore)/[orichalcum](Orichalcum_Ore)"
+        },
+        {
+          "id": 80,
+          "text": "Upgrade your gear and tools with [adamantite](Adamantite_Ore)/[titanium](Titanium_Ore)"
+        },
+        {
+          "id": 81,
+          "text": "Get a [Gelatin Crystal](Gelatin_Crystal) in the [Underground Hallows](Underground_Hallow)"
+        },
+        {
+          "id": 82,
+          "text": "Defeat the bosses (see below)"
+        },
+        {
+          "id": 83,
+          "text": "Unlock the NPCs (see below)"
+        },
+        "🧙 NPCs unlocks",
+        {
+          "id": 84,
+          "text": "{npc Wizard}(Wizard): talk to the Bound Wizard in the [cavern layer](Cavern)"
+        },
+        {
+          "id": 85,
+          "text": "{npc Tax Collector}(Tax_Collector): convert a [Tortured Soul](Tortured_Soul) in the Underworld with some [Purification Powder](Thrown_Powder)"
+        },
+        {
+          "id": 86,
+          "text": "{npc Pirate}(Pirate): defeat the {event Pirate Invasion}(Pirate_Invasion)"
+        },
+        "💀 Boss fights",
+        {
+          "id": 87,
+          "text": "{boss Queen Slime}(Queen_Slime): summon the boss with a [Gelatin Crystal](Gelatin_Crystal) in the Hallow biome and defeat her"
+        },
+        {
+          "id": 88,
+          "text": "During the {event Blood Moon}(Blood_Moon) summon mini-bosses {boss Blood Eel}(Blood_Eel) and {boss Dreadnautilus}(Dreadnautilus) by fishing anywhere (fishing at the surface layer is recommended to have enough space to fight)"
+        },
+        "📅 Event trigger",
+        {
+          "id": 89,
+          "text": "{event Pirate Invasion}(Pirate_Invasion): occurs randomly after defeating the {boss Wall of Flesh}(Wall_of_Flesh)"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "VI. The Mechanical Terrors",
+      "slug": "the-mechanical-terrors",
+      "background": "#000000",
+      "items": [
+        "💀 Boss fights",
+        {
+          "id": 90,
+          "text": "🛡️ Gear up for the next boss ([weapons](Weapons), [potions](Potions) & [armor](Armor))"
+        },
+        {
+          "id": 91,
+          "text": "{boss The Destroyer}(The_Destroyer): summon the boss with a [Mechanical Worm](Mechanical_Worm) **at night** and defeat it"
+        },
+        {
+          "id": 92,
+          "text": "Farm {boss The Destroyer}(The_Destroyer) to gather a maximum of [hallowed bars](Hallowed_Bar)"
+        },
+        {
+          "id": 93,
+          "text": "Upgrade your armor with [hallowed bars](Hallowed_Bar)"
+        },
+        {
+          "id": 94,
+          "text": "🛡️ Gear up for the next boss ([weapons](Weapons), [potions](Potions) & [armor](Armor))"
+        },
+        {
+          "id": 95,
+          "text": "{boss Skeletron Prime}(Skeletron_Prime): summon the boss with a [Mechanical Skull](Mechanical_Skull) **at night** and defeat it"
+        },
+        {
+          "id": 96,
+          "text": "🛡️ Gear up for the next boss ([weapons](Weapons), [potions](Potions) & [armor](Armor))"
+        },
+        {
+          "id": 97,
+          "text": "Find some [ranged weapons](Ranged_weapons) and craft some [ammunitions](Ammunition_items) ([Chlorophyte Bullets](Chlorophyte_Bullet) for example)"
+        },
+        {
+          "id": 98,
+          "text": "{boss The Twins}(The_Twins): summon the boss with a [Mechanical Eye](Mechanical_Eye) **at night** and defeat them"
+        },
+        "🌄 Exploration & adventure",
+        {
+          "id": 99,
+          "text": "Upgrade your [Emblems](Emblem) to [Avenger Emblem](Avenger_Emblem)"
+        },
+        {
+          "id": 100,
+          "text": "Craft a pair of [wings](Wings)"
+        },
+        {
+          "id": 101,
+          "text": "Buy the [Clentaminator](Clentaminator) at the {npc Steampunker}(Steampunker) and [reduce the corruption](Guide:Maintaining_world_purity) if necessary"
+        },
+        "🧙 NPC unlock",
+        {
+          "id": 102,
+          "text": "{npc Steampunker}(Steampunker): defeat at least one [Mechanical Boss](Mechanical_bosses)"
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "label": "VII. The Green Inferno",
+      "slug": "the-green-inferno",
+      "background": "#2f701a",
+      "note": "Defeating Plantera slows the corruption spread by 50%.",
+      "items": [
+        "🌄 Exploration & adventure",
+        {
+          "id": 103,
+          "text": "Find some [Life Fruits](Life_Fruit) in the jungle biome and max out your HP to 500"
+        },
+        {
+          "id": 104,
+          "text": "Upgrade your gear with [chlorophyte](Chlorophyte_Ore)"
+        },
+        {
+          "id": 105,
+          "text": "Upgrade your gear and weapons [rarity](Rarity) by reforging them at the {npc Goblin Tinkerer}(Goblin_Tinkerer)"
+        },
+        {
+          "id": 106,
+          "text": "Go back to the [dungeon](Dungeon) and farm the hardmode monsters to get new items"
+        },
+        "🧙 NPC unlock",
+        {
+          "id": 107,
+          "text": "{npc Cyborg}(Cyborg): defeat {boss Plantera}(Plantera)"
+        },
+        "💀 Boss fight",
+        {
+          "id": 108,
+          "text": "🛡️ Gear up for the next boss ([weapons](Weapons), [potions](Potions) & [armor](Armor))"
+        },
+        {
+          "id": 109,
+          "text": "Find the a [Plantera's Bulb](Plantera's_Bulb) in the jungle biome"
+        },
+        {
+          "id": 110,
+          "text": "Find an area open enough to fight next to the bulb or prepare it"
+        },
+        {
+          "id": 111,
+          "text": "{boss Plantera}(Plantera): destroy the [Plantera's Bulb](Plantera's_Bulb) to summon the boss, then defeat it"
+        },
+        "📅 Event triggers",
+        {
+          "id": 112,
+          "text": "{event Old One's Army}(Old_One's_Army): put an [Eternia Crystal](Eternia_Crystal) in the [Eternia Crystal Stand](Eternia_Crystal_Stand) and survive until wave 7"
+        },
+        {
+          "id": 115,
+          "text": "{event Frost Moon}(Frost_Moon): trigger the event **at night** with a [Naughty Present](Naughty_Present) and survive until wave 15"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "VIII. The Ritual",
+      "slug": "the-ritual",
+      "background": "#381d14",
+      "note": "At night, summon all Mecanical Bosses and defeat them simultaneously to get a rare achievement.",
+      "items": [
+        "🌄 Exploration & adventure",
+        {
+          "id": 116,
+          "text": "Get some [biome keys](Biome_Chests) and open the corresponding [chests](Biome_Chests#Types) in the dungeon"
+        },
+        "💀 Boss fight",
+        {
+          "id": 117,
+          "text": "🛡️ Gear up for the next boss ([weapons](Weapons), [potions](Potions) & [armor](Armor))"
+        },
+        {
+          "id": 118,
+          "text": "Find the jungle [temple](Temple) entrance and explore it"
+        },
+        {
+          "id": 119,
+          "text": "{boss Golem}(Golem): find a [Lihzahrd Power Cell](Lihzahrd_Power_Cell) in the temple chests, put it in the [Lihzahrd Altar](Lihzahrd_Altar) at the end of the temple to summon the boss, then defeat it"
+        },
+        "📅 Event triggers",
+        {
+          "id": 120,
+          "text": "Get 8 [Solar Tablet Fragments](Solar_Tablet_Fragment) found in [Lihzahrd Chests](Lihzahrd_Chest) and craft a [Solar Tablet](Solar_Tablet)"
+        },
+        {
+          "id": 121,
+          "text": "{event Solar Eclipse}(Solar_Eclipse): use the [Solar Tablet](Solar_Tablet) to trigger the event **during the day**"
+        },
+        {
+          "id": 122,
+          "text": "{event Martian Madness}(Martian_Madness): find a [Martian Probe](Martian_Probe) at the surface, approach it to be detected and let it escape to trigger the event"
+        },
+        {
+          "id": 123,
+          "text": "{event Pumpkin Moon}(Pumpkin_Moon): trigger the event **at night** with a [Pumpkin Moon Medallion](Pumpkin_Moon_Medallion) and survive until wave 15"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "IX. The King of the Oceans",
+      "slug": "the-king-of-the-oceans",
+      "background": "#1544ba",
+      "items": [
+        "💀 Boss fights",
+        {
+          "id": 124,
+          "text": "🛡️ Gear up for the next boss ([weapons](Weapons), [potions](Potions) & [armor](Armor))"
+        },
+        {
+          "id": 125,
+          "text": "Capture a [Truffle Worm](Truffle_Worm) with a [Bug Net](Bug_Net) in a [Mushroom biome](Mushroom_biome)"
+        },
+        {
+          "id": 126,
+          "text": "Prepare a large area with multiple levels of [platforms](Platforms) in the [ocean](Ocean) biome"
+        },
+        {
+          "id": 127,
+          "text": "{boss Duke Fishron}(Duke_Fishron): summon the boss by fishing in the ocean with a [Truffle Worm](Truffle_Worm) as bait, then defeat it"
+        },
+        {
+          "id": 128,
+          "text": "Farm {boss Duke Fishron}(Duke_Fishron) to get his wings and powerful weapons"
+        },
+        {
+          "id": 129,
+          "text": "{boss Betsy}(Betsy): defeat the boss after 7th wave of the {event Old One's Army}(Old_One's_Army)"
+        },
+        "📅 Event trigger",
+        {
+          "id": 130,
+          "text": "{event Old One's Army}(Old_One's_Army): put an [Eternia Crystal](Eternia_Crystal) in the [Eternia Crystal Stand](Eternia_Crystal_Stand) and survive until the final boss"
+        },
+        "🧙 NPCs unlocks",
+        {
+          "id": 131,
+          "text": "{npc Truffle}(Truffle): make an artificial [Mushroom biome](Mushroom_biome) with at least 200 Mushroom biome blocks (using [Mushroom Grass Seeds](Mushroom_Grass_Seeds) on dirt is good enough) and build a house to attract the NPC"
+        },
+        {
+          "id": 132,
+          "text": "{npc Princess}(Princess): have unlocked all previously mentioned NPCs in your world"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "X. Journey’s End",
+      "slug": "journeys-end",
+      "background": "linear-gradient(135deg, rgba(255,54,0,1) 0%, rgba(255,54,0,1) 25%, rgba(224,0,149,1) 25%, rgba(224,0,149,1) 50%, rgba(43,56,181,1) 50%, rgba(43,56,181,1) 75%, rgba(0,54,49,1) 75%)",
+      "items": [
+        "🌄 Exploration & adventure",
+        {
+          "id": 133,
+          "text": "Upgrade your gear and weapons [rarity](Rarity) by reforging them at the {npc Goblin Tinkerer}(Goblin_Tinkerer)"
+        },
+        "📅 Event trigger",
+        {
+          "id": 134,
+          "text": "{event Lunar events}(Lunar_Events): defeat the [Lunatic Cultist](Lunatic_Cultist) at the dungeon entrance to trigger the event"
+        },
+        {
+          "id": 135,
+          "text": "Destroy **3 of the 4** {event Lunar events}(Lunar_Events) [Celestial Pillars](Celestial_Pillars) that appeared in the world"
+        },
+        "💀 Boss fights",
+        {
+          "id": 136,
+          "text": "🛡️ Gear up for the next boss ([weapons](Weapons), [potions](Potions) & [armor](Armor))"
+        },
+        {
+          "id": 137,
+          "text": "{boss Empress of Light}(Empress_of_Light): summon the boss **at night in the Hallow biome** by killing a [Prismatic Lacewing](Prismatic_Lacewing)"
+        },
+        {
+          "id": 138,
+          "text": "{boss Lunatic Cultist}(Lunatic_Cultist): summon the boss by killing the 4 [Cultists](Cultist) at the dungeon entrance, then defeat it"
+        },
+        {
+          "id": 139,
+          "text": "🛡️ Gear up for the last time by taking a lot of [defensive potions](Potions#Buff_potions) and [ranged weapons](Ranged_weapons) (with [Chlorophyte Bullets](Chlorophyte_Bullet) for example) and by upgrading your [accessories](Accessories)"
+        },
+        {
+          "id": 140,
+          "text": "{boss Moon Lord}(Moon_Lord): destroy the forth [Celestial Pillar](Celestial_Pillars) to summon the boss, then defeat him"
+        },
+        {
+          "id": 141,
+          "text": "Farm the {boss Moon Lord}(Moon_Lord) to get powerfull weapons and some [luminite](Luminite) ores by summoning him with a [Celestial Sigil](Celestial_Sigil)"
+        },
+        {
+          "id": 142,
+          "text": "Upgrade your gear with [Nebula](Nebula_Fragment)/[Solar](Solar_Fragment)/[Stardust](Stardust_Fragment)/[Vortex](Vortex_Fragment) fragments and [luminite](Luminite) ores"
+        },
+        "🎉 Post Moon Lord",
+        {
+          "id": 143,
+          "text": "Upgrade all [accessories](Accessories) and craft a [Cell Phone](Cell_Phone)"
+        },
+        {
+          "id": 144,
+          "text": "Craft the mining mount [Drill Containment Unit](Drill_Containment_Unit)"
+        },
+        {
+          "id": 145,
+          "text": "Reforge all items at the {npc Goblin Tinkerer}(Goblin_Tinkerer) to get the best [rarities](Rarity)"
+        },
+        {
+          "id": 146,
+          "text": "Craft the [Zenith](Zenith) sword by combining all the swords in the game"
+        },
+        {
+          "id": 147,
+          "text": "Restart an adventure in [Expert](Expert_Mode) or [Master mode](Master_Mode) to get new items 😏"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Seasonal Events",
+      "slug": "seasonal-events",
+      "background": "#91c9ff",
+      "items": [
+        "📅 Event triggers",
+        {
+          "id": 148,
+          "text": "{event Frost Legion}(Frost_Legion): **only during Christmas season** (15-31 december), triggered with a [Snow Globe](Snow_Globe) that can be found in the monsters loot [presents](Presents)"
+        },
+        "🧙 NPCs unlocks",
+        {
+          "id": 149,
+          "text": "{npc Santa Claus}(Santa_Claus): defeate the {event Frost Legion}(Frost_Legion) is defeated"
+        }
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "id": 1,
+      "label": "Armor Sets",
+      "slug": "armors",
+      "background": "#535353",
+      "items": [
+        "🌳 Pre-Hardmode",
+        {
+          "id": 1,
+          "name": "Mining armor"
+        },
+        {
+          "id": 2,
+          "name": "Wood armor"
+        },
+        {
+          "id": 3,
+          "name": "Rich Mahogany armor"
+        },
+        {
+          "id": 4,
+          "name": "Boreal Wood armor"
+        },
+        {
+          "id": 5,
+          "name": "Palm Wood armor"
+        },
+        {
+          "id": 6,
+          "name": "Ebonwood armor"
+        },
+        {
+          "id": 7,
+          "name": "Shadewood armor"
+        },
+        {
+          "id": 8,
+          "name": "Ash Wood armor"
+        },
+        {
+          "id": 9,
+          "name": "Rain armor"
+        },
+        {
+          "id": 10,
+          "name": "Snow armor"
+        },
+        {
+          "id": 11,
+          "name": "Angler armor"
+        },
+        {
+          "id": 12,
+          "name": "Cactus armor"
+        },
+        {
+          "id": 13,
+          "name": "Copper armor"
+        },
+        {
+          "id": 14,
+          "name": "Tin armor"
+        },
+        {
+          "id": 15,
+          "name": "Pumpkin armor"
+        },
+        {
+          "id": 16,
+          "name": "Ninja armor"
+        },
+        {
+          "id": 17,
+          "name": "Iron armor"
+        },
+        {
+          "id": 18,
+          "name": "Lead armor"
+        },
+        {
+          "id": 19,
+          "name": "Silver armor"
+        },
+        {
+          "id": 20,
+          "name": "Tungsten armor"
+        },
+        {
+          "id": 21,
+          "name": "Gold armor"
+        },
+        {
+          "id": 22,
+          "name": "Platinum armor"
+        },
+        {
+          "id": 23,
+          "name": "Fossil armor"
+        },
+        {
+          "id": 24,
+          "name": "Bee armor"
+        },
+        {
+          "id": 25,
+          "name": "Obsidian armor"
+        },
+        {
+          "id": 26,
+          "name": "Gladiator armor"
+        },
+        {
+          "id": 27,
+          "name": "Meteor armor"
+        },
+        {
+          "id": 28,
+          "name": "Jungle armor"
+        },
+        {
+          "id": 29,
+          "name": "Ancient Cobalt armor"
+        },
+        {
+          "id": 30,
+          "name": "Necro armor"
+        },
+        {
+          "id": 31,
+          "name": "Shadow armor"
+        },
+        {
+          "id": 32,
+          "name": "Ancient Shadow armor"
+        },
+        {
+          "id": 33,
+          "name": "Crimson armor"
+        },
+        {
+          "id": 34,
+          "name": "Molten armor"
+        },
+        "🦄 Hardmode",
+        {
+          "id": 35,
+          "name": "Pearlwood armor"
+        },
+        {
+          "id": 36,
+          "name": "Spider armor"
+        },
+        {
+          "id": 37,
+          "name": "Cobalt armor"
+        },
+        {
+          "id": 38,
+          "name": "Palladium armor"
+        },
+        {
+          "id": 39,
+          "name": "Mythril armor"
+        },
+        {
+          "id": 40,
+          "name": "Orichalcum armor"
+        },
+        {
+          "id": 41,
+          "name": "Adamantite armor"
+        },
+        {
+          "id": 42,
+          "name": "Titanium armor"
+        },
+        {
+          "id": 43,
+          "name": "Crystal Assassin armor"
+        },
+        {
+          "id": 44,
+          "name": "Frost armor"
+        },
+        {
+          "id": 45,
+          "name": "Forbidden armor"
+        },
+        {
+          "id": 46,
+          "name": "Squire armor"
+        },
+        {
+          "id": 47,
+          "name": "Monk armor"
+        },
+        {
+          "id": 48,
+          "name": "Huntress armor"
+        },
+        {
+          "id": 49,
+          "name": "Apprentice armor"
+        },
+        {
+          "id": 50,
+          "name": "Hallowed armor"
+        },
+        {
+          "id": 51,
+          "name": "Ancient Hallowed armor"
+        },
+        {
+          "id": 52,
+          "name": "Chlorophyte armor"
+        },
+        {
+          "id": 53,
+          "name": "Turtle armor"
+        },
+        {
+          "id": 54,
+          "name": "Tiki armor"
+        },
+        {
+          "id": 55,
+          "name": "Beetle armor"
+        },
+        {
+          "id": 56,
+          "name": "Shroomite armor"
+        },
+        {
+          "id": 57,
+          "name": "Spectre armor"
+        },
+        {
+          "id": 58,
+          "name": "Spooky armor"
+        },
+        {
+          "id": 59,
+          "name": "Valhalla Knight armor"
+        },
+        {
+          "id": 60,
+          "name": "Shinobi Infiltrator armor"
+        },
+        {
+          "id": 61,
+          "name": "Red Riding armor"
+        },
+        {
+          "id": 62,
+          "name": "Dark Artist armor"
+        },
+        {
+          "id": 63,
+          "name": "Solar Flare armor"
+        },
+        {
+          "id": 64,
+          "name": "Vortex armor"
+        },
+        {
+          "id": 65,
+          "name": "Nebula armor"
+        },
+        {
+          "id": 66,
+          "name": "Stardust armor"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Trophies",
+      "slug": "trophies",
+      "background": "#896245",
+      "items": [
+        "🌳 Pre-Hardmode",
+        {
+          "id": 67,
+          "name": "King Slime Trophy"
+        },
+        {
+          "id": 68,
+          "name": "Eye of Cthulhu Trophy"
+        },
+        {
+          "id": 69,
+          "name": "Eater of Worlds Trophy"
+        },
+        {
+          "id": 70,
+          "name": "Brain of Cthulhu Trophy"
+        },
+        {
+          "id": 71,
+          "name": "Queen Bee Trophy"
+        },
+        {
+          "id": 72,
+          "name": "Skeletron Trophy"
+        },
+        {
+          "id": 73,
+          "name": "Deerclops Trophy"
+        },
+        {
+          "id": 74,
+          "name": "Wall of Flesh Trophy"
+        },
+        "🦄 Hardmode",
+        {
+          "id": 75,
+          "name": "Queen Slime Trophy"
+        },
+        {
+          "id": 76,
+          "name": "Retinazer Trophy"
+        },
+        {
+          "id": 77,
+          "name": "Spazmatism Trophy"
+        },
+        {
+          "id": 78,
+          "name": "Destroyer Trophy"
+        },
+        {
+          "id": 79,
+          "name": "Skeletron Prime Trophy"
+        },
+        {
+          "id": 80,
+          "name": "Plantera Trophy"
+        },
+        {
+          "id": 81,
+          "name": "Golem Trophy"
+        },
+        {
+          "id": 82,
+          "name": "Empress of Light Trophy"
+        },
+        {
+          "id": 83,
+          "name": "Duke Fishron Trophy"
+        },
+        {
+          "id": 84,
+          "name": "Lunatic Cultist Trophy"
+        },
+        {
+          "id": 85,
+          "name": "Moon Lord Trophy"
+        },
+        "📅 Events",
+
+        {
+          "id": 86,
+          "name": "Dark Mage Trophy"
+        },
+        {
+          "id": 87,
+          "name": "Ogre Trophy"
+        },
+        {
+          "id": 88,
+          "name": "Betsy Trophy"
+        },
+        {
+          "id": 89,
+          "name": "Mourning Wood Trophy"
+        },
+        {
+          "id": 90,
+          "name": "Pumpking Trophy"
+        },
+        {
+          "id": 91,
+          "name": "Everscream Trophy"
+        },
+        {
+          "id": 92,
+          "name": "Santa-NK1 Trophy"
+        },
+        {
+          "id": 93,
+          "name": "Ice Queen Trophy"
+        },
+        {
+          "id": 94,
+          "name": "Flying Dutchman Trophy"
+        },
+        {
+          "id": 95,
+          "name": "Martian Saucer Trophy"
+        },
+        "🎣 Fishing",
+        {
+          "id": 96,
+          "name": "Goldfish Trophy"
+        },
+        {
+          "id": 97,
+          "name": "Bunnyfish Trophy"
+        },
+        {
+          "id": 98,
+          "name": "Swordfish Trophy"
+        },
+        {
+          "id": 99,
+          "name": "Sharkteeth Trophy"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Relics",
+      "slug": "relics",
+      "background": "#b49e3f",
+      "items": [
+        "🌳 Pre-Hardmode",
+        {
+          "id": 100,
+          "name": "King Slime Relic"
+        },
+        {
+          "id": 101,
+          "name": "Eye of Cthulhu Relic"
+        },
+        {
+          "id": 102,
+          "name": "Eater of Worlds Relic"
+        },
+        {
+          "id": 103,
+          "name": "Brain of Cthulhu Relic"
+        },
+        {
+          "id": 104,
+          "name": "Queen Bee Relic"
+        },
+        {
+          "id": 105,
+          "name": "Skeletron Relic"
+        },
+        {
+          "id": 106,
+          "name": "Deerclops Relic"
+        },
+        {
+          "id": 107,
+          "name": "Wall of Flesh Relic"
+        },
+        "🦄 Hardmode",
+
+        {
+          "id": 108,
+          "name": "Queen Slime Relic"
+        },
+        {
+          "id": 109,
+          "name": "Twins Relic"
+        },
+        {
+          "id": 110,
+          "name": "Destroyer Relic"
+        },
+        {
+          "id": 111,
+          "name": "Skeletron Prime Relic"
+        },
+        {
+          "id": 112,
+          "name": "Plantera Relic"
+        },
+        {
+          "id": 113,
+          "name": "Golem Relic"
+        },
+        {
+          "id": 114,
+          "name": "Empress of Light Relic"
+        },
+        {
+          "id": 115,
+          "name": "Duke Fishron Relic"
+        },
+        {
+          "id": 116,
+          "name": "Lunatic Cultist Relic"
+        },
+        {
+          "id": 117,
+          "name": "Moon Lord Relic"
+        },
+        "📅 Events",
+        {
+          "id": 118,
+          "name": "Dark Mage Relic"
+        },
+        {
+          "id": 120,
+          "name": "Ogre Relic"
+        },
+        {
+          "id": 121,
+          "name": "Betsy Relic"
+        },
+        {
+          "id": 122,
+          "name": "Mourning Wood Relic"
+        },
+        {
+          "id": 123,
+          "name": "Pumpking Relic"
+        },
+        {
+          "id": 124,
+          "name": "Everscream Relic"
+        },
+        {
+          "id": 125,
+          "name": "Santa-NK1 Relic"
+        },
+        {
+          "id": 126,
+          "name": "Ice Queen Relic"
+        },
+
+        {
+          "id": 127,
+          "name": "Flying Dutchman Relic"
+        },
+        {
+          "id": 128,
+          "name": "Martian Saucer Relic"
+        }
+      ]
+    }
+  ]
+}

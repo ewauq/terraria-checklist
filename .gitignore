@@ -1,2 +1,4 @@
-node_modules/*
-*.map
+/node_modules
+/backup
+/dist
+.DS_Store

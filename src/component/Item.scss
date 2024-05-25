@@ -1,0 +1,94 @@
+.item {
+  display: inline-flex;
+  height: 150px;
+  width: 80px;
+  flex-direction: column;
+  gap: 4px;
+
+  &.done .frame {
+    background-color: #c9ecd8;
+    border: 1px solid #008000;
+
+    img {
+      opacity: 1;
+      filter: saturate(100%);
+    }
+
+    &:hover {
+      background-color: darken(#c9ecd8, 10%);
+
+      &::after {
+        display: block;
+        opacity: 1;
+        filter: none;
+      }
+    }
+
+    &:active {
+      background-color: darken(#c9ecd8, 15%);
+    }
+
+    &::after {
+      display: block;
+      opacity: 1;
+    }
+  }
+
+  .frame {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    gap: $gap-tiny;
+
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+    cursor: pointer;
+
+    img {
+      opacity: 0.7;
+      filter: saturate(60%);
+    }
+
+    &::after {
+      content: '';
+      background-color: red;
+      height: 40px;
+      width: 40px;
+      margin-top: 70px;
+      margin-left: 74px;
+      position: absolute;
+      background: url('../image/icon/check.svg') center center no-repeat;
+      background-size: cover;
+      display: none;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+      background-color: darken(#ffffff, 5%);
+
+      img {
+        opacity: 1;
+        filter: saturate(100%);
+      }
+
+      &::after {
+        display: block;
+        opacity: 0.5;
+        filter: saturate(0);
+      }
+    }
+
+    &:active {
+      background-color: darken(#ffffff, 10%);
+    }
+  }
+
+  .item-text {
+    font-size: $small-font-size;
+    text-align: center;
+  }
+}
