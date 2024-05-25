@@ -1,16 +1,49 @@
 .drawer {
   display: none;
-  margin-right: -$drawer-width;
-  background-color: white;
-  padding: $gap-large;
 
+  margin-right: -$drawer-width;
+  min-width: $drawer-width;
+
+  background-color: white;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.05);
 
+  z-index: 9;
+  padding-bottom: $gap-large;
+
+  font-size: $small-font-size;
+
   @mixin opened {
     display: block;
-    min-width: $drawer-width;
-    z-index: 9;
+  }
+
+  @include desktop {
+    margin-right: 0;
+    font-size: $global-font-size;
+    @include opened;
+  }
+
+  @mixin ornament($icon) {
+    vertical-align: top;
+    opacity: 0.7;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    content: ' ';
+    background: url('../image/icon/#{$icon}.svg') no-repeat center center;
+    margin-right: 5px;
+  }
+
+  @mixin link-block {
+    color: $color-black-coal;
+    padding: $gap-small $gap-large;
+    display: block;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(240, 240, 240);
+      text-decoration: none;
+    }
   }
 
   &.open {
@@ -23,116 +56,85 @@
     padding-bottom: 20px;
     margin-bottom: 20px;
     gap: $gap-small;
+    margin: $gap-large;
 
     @include desktop {
       display: flex;
     }
-  }
 
-  .logo-text {
-    display: flex;
-    flex-direction: column;
-    font-family: $big-text-font-family;
-    text-transform: uppercase;
-    justify-content: center;
-    gap: $gap-small;
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      font-family: $big-text-font-family;
+      text-transform: uppercase;
+      justify-content: center;
+      gap: $gap-small;
 
-    span {
-      font-size: 26px;
-      line-height: 20px;
+      span {
+        font-size: 26px;
+        line-height: 20px;
+      }
     }
-  }
-
-  .diminished {
-    color: $color-black-coal-light;
-    font-size: 13px;
-  }
-
-  .separator {
-    height: 1px;
-    line-height: 1px;
-    width: 100%;
-    background-color: #eeeeee;
-    margin: 20px 0;
   }
 
   hr {
     height: 1px;
     line-height: 1px;
-    width: 100%;
     background-color: #eeeeee;
     border: 0;
-    margin: 20px 0;
-  }
-
-  a.reset {
-    display: inline-block;
-    color: $color-black-coal;
-    cursor: pointer;
-    &::before {
-      vertical-align: top;
-      opacity: 0.7;
-      display: inline-block;
-      width: 24px;
-      height: 24px;
-      content: ' ';
-      background: url('../image/icon/reset.svg') no-repeat center center;
-      margin-right: 5px;
-    }
-    &:hover {
-      text-decoration: underline;
-    }
+    margin: $gap-large;
   }
 
   .sections {
-    a {
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      text-decoration: none;
-      cursor: pointer;
-      color: $color-black-coal;
-      &:hover {
-        text-decoration: underline;
-      }
-      &.done {
-        color: $color-black-coal;
-        background-color: #c9ecd8;
-        .done-count {
-          font-weight: bold;
-          color: green;
-        }
-      }
-      .done-count {
-        color: $color-black-coal-light;
-      }
-    }
-
     h3 {
-      margin-top: $gap-large;
-      margin-bottom: $gap-small;
+      margin: $gap-large 0 $gap-small $gap-large;
       font-size: 18px;
     }
 
-    .chapters {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      font-size: 15px;
-      gap: $gap-medium;
-      a {
-        display: inline;
+    a {
+      @include link-block;
+
+      .done-count {
+        color: $color-black-coal-light;
+        font-size: $small-font-size;
       }
     }
   }
 
-  @include desktop {
-    margin-right: 0;
-    @include opened;
+  a.home {
+    margin-top: $gap-large;
+    &::before {
+      @include ornament('home');
+    }
+  }
+  a.reset {
+    @include link-block;
+    &::before {
+      @include ornament('reset');
+    }
   }
 
-  @if ($DEBUG) {
-    border: 2px solid blue;
-    background-color: rgb(223, 223, 255);
+  .diminished {
+    margin: 0 $gap-large;
+    color: $color-black-coal-light;
+    font-size: 13px;
+  }
+}
+
+.overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &.show {
+    display: block;
+    @include desktop {
+      display: none;
+    }
   }
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import { useDrawer } from '../context/DrawerContext'
 import { Collection } from '../type/collection'
 import Item from './Item'
 
@@ -9,14 +8,8 @@ interface ColletionPageProps {
 }
 
 const CollectionPage = ({ page, onItemChecked }: ColletionPageProps): JSX.Element => {
-  const { setOpenDrawer } = useDrawer()
-
-  const handlePageClick = (): void => {
-    setOpenDrawer(false)
-  }
-
   return (
-    <div className="page" onClick={handlePageClick}>
+    <div className="page">
       <div className="cover" style={{ background: page?.background }}>
         <h1>{page?.label}</h1>
       </div>

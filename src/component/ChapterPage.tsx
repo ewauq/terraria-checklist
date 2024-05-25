@@ -1,5 +1,4 @@
 import React from 'react'
-import { useDrawer } from '../context/DrawerContext'
 import { Chapter } from '../type/chapter'
 import ChapterCategory from './ChapterCategory'
 import Line from './Line'
@@ -10,14 +9,8 @@ interface ChapterPageProps {
 }
 
 const ChapterPage = ({ page, onItemChecked }: ChapterPageProps): JSX.Element => {
-  const { setOpenDrawer } = useDrawer()
-
-  const handlePageClick = (): void => {
-    setOpenDrawer(false)
-  }
-
   return (
-    <div className="page" onClick={handlePageClick}>
+    <div className="page">
       <div className="cover" style={{ background: page?.background }}>
         <h1>{page?.label}</h1>
       </div>
