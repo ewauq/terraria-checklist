@@ -289,8 +289,8 @@
     },
     {
       "id": 4,
-      "label": "IV. The Hell",
-      "slug": "the-hell",
+      "label": "IV. The Underworld",
+      "slug": "the-underworld",
       "background": "#d73f21",
       "note": "The world will now enter Hardmode introducing new and powerful monsters and ores. Corruption will also spread much faster.",
       "items": [
@@ -700,7 +700,7 @@
     },
     {
       "id": 11,
-      "label": "Seasonal events",
+      "label": "Seasonal Events",
       "slug": "seasonal-events",
       "background": "#91c9ff",
       "items": [
@@ -720,7 +720,7 @@
   "collections": [
     {
       "id": 1,
-      "label": "Armors sets",
+      "label": "Armor Sets",
       "slug": "armors",
       "background": "#535353",
       "items": [
