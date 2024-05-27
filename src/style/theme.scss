@@ -15,13 +15,15 @@ $gap-medium: 16px;
 $gap-large: 20px;
 $gap-xlarge: 40px;
 
-$color-black-coal: rgba(0, 0, 0, 0.8);
 $color-black-coal-light: rgba(0, 0, 0, 0.4);
+$color-black-coal: rgba(0, 0, 0, 0.8);
 $color-blue-link: rgb(57, 112, 215);
+$color-blue: rgb(57, 112, 215);
+$color-gray-light: rgba(0, 0, 0, 0.05);
 $color-green-dark: rgb(52, 129, 55);
 $color-green: rgb(126, 196, 136);
 $color-red: rgb(198, 58, 58);
-$color-blue: rgb(57, 112, 215);
+$color-red-light: rgb(255, 233, 233);
 
 @mixin desktop {
   @media only screen and (min-width: 600px) {

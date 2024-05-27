@@ -43,7 +43,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: rgb(240, 240, 240);
+      background-color: $color-gray-light;
       text-decoration: none;
     }
   }
@@ -54,7 +54,7 @@
 
   .logo {
     display: none;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid $color-gray-light;
     padding-bottom: 20px;
     margin-bottom: 20px;
     gap: $gap-small;
@@ -103,8 +103,8 @@
       }
 
       &:hover {
-        background-color: #ffe9e9;
-        color: #d32f2f;
+        background-color: $color-red-light;
+        color: $color-red;
       }
     }
   }
@@ -123,7 +123,7 @@
         font-size: $small-font-size;
       }
       &.active {
-        background-color: rgb(240, 240, 240);
+        background-color: $color-gray-light;
         font-weight: bold;
       }
 
@@ -152,7 +152,7 @@
 
 .overlay {
   display: none;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: $color-black-coal-light;
   z-index: 8;
   position: fixed;
   top: 0;

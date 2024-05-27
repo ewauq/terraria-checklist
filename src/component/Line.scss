@@ -1,9 +1,18 @@
 .line {
+  @mixin done-item {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.3);
+    border: 0;
+  }
+  @mixin checked-transition {
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.18, 1);
+  }
+
   display: flex;
   gap: $gap-medium;
   align-items: flex-start;
   flex-direction: row;
-  transition: all 0.3s cubic-bezier(0.77, 0, 0.18, 1);
+  @include checked-transition;
 
   .text {
     display: inline;
@@ -12,28 +21,22 @@
   }
 
   &.done {
-    text-decoration: line-through;
-    color: rgba(0, 0, 0, 0.3);
-    transition: all 0.3s cubic-bezier(0.77, 0, 0.18, 1);
+    @include checked-transition;
+    @include done-item;
 
     .text {
       .entity a {
-        text-decoration: line-through;
-        color: rgba(0, 0, 0, 0.3);
-        border: 0;
-        transition: all 0.3s cubic-bezier(0.77, 0, 0.18, 1);
+        @include done-item;
+        @include checked-transition;
       }
     }
     a {
-      text-decoration: line-through;
-      color: rgba(0, 0, 0, 0.3);
-      border: 0;
-      transition: all 0.3s cubic-bezier(0.77, 0, 0.18, 1);
+      @include checked-transition;
     }
 
     img {
       opacity: 0.3;
-      transition: all 0.3s cubic-bezier(0.77, 0, 0.18, 1);
+      @include checked-transition;
     }
   }
 

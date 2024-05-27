@@ -53,7 +53,6 @@
       @include desktop {
         justify-content: flex-start;
       }
-
     }
 
     h3 {
@@ -74,7 +73,7 @@
   .notes {
     display: block;
     padding: $gap-medium;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: $color-gray-light;
     &::before {
       vertical-align: top;
       opacity: 0.7;
