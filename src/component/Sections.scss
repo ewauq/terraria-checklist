@@ -1,0 +1,26 @@
+.sections {
+  h3 {
+    margin: $gap-large 0 $gap-small $gap-large;
+    font-size: 18px;
+  }
+
+  a {
+    @include link-block;
+
+    .done-count {
+      color: $color-black-coal-light;
+      font-size: $small-font-size;
+    }
+    &.active {
+      background-color: $color-gray-light;
+      font-weight: bold;
+    }
+
+    &.done {
+      .done-count {
+        color: $color-green-dark;
+        font-weight: bold;
+      }
+    }
+  }
+}

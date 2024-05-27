@@ -34,20 +34,6 @@
     background: url('../image/icon/#{$icon}.svg') no-repeat center center;
   }
 
-  @mixin link-block {
-    color: $color-black-coal;
-    padding: $gap-small $gap-large;
-    display: flex;
-    align-items: center;
-    gap: $gap-tiny;
-    cursor: pointer;
-
-    &:hover {
-      background-color: $color-gray-light;
-      text-decoration: none;
-    }
-  }
-
   &.open {
     @include opened;
   }
@@ -105,33 +91,6 @@
       &:hover {
         background-color: $color-red-light;
         color: $color-red;
-      }
-    }
-  }
-
-  .sections {
-    h3 {
-      margin: $gap-large 0 $gap-small $gap-large;
-      font-size: 18px;
-    }
-
-    a {
-      @include link-block;
-
-      .done-count {
-        color: $color-black-coal-light;
-        font-size: $small-font-size;
-      }
-      &.active {
-        background-color: $color-gray-light;
-        font-weight: bold;
-      }
-
-      &.done {
-        .done-count {
-          color: $color-green-dark;
-          font-weight: bold;
-        }
       }
     }
   }

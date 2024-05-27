@@ -1,19 +1,18 @@
 import React from 'react'
 import { useDatabase } from '../context/DatabaseContext'
 import { useDrawer } from '../context/DrawerContext'
-import ChaptersSection from './ChaptersSection'
-import CollectionSection from './CollectionsSection'
 import './Drawer.scss'
+import Sections from './Sections'
 
 // @ts-ignore
 const LAST_BUILD_DATE = __BUILD_DATE__
 
 const Drawer = (): JSX.Element => {
-  const database = useDatabase()
+  const data = useDatabase()
   const { openDrawer, setOpenDrawer } = useDrawer()
 
-  if (!database) return <></>
-  const { chapters, collections } = database
+  if (!data) return <></>
+  const { chapters } = data
 
   const handleResetClick = (): void => {
     const confirmation = confirm('Are you sure you want to reset your progression?')
@@ -44,8 +43,7 @@ const Drawer = (): JSX.Element => {
           <a href="index.html" className="home">
             Home
           </a>
-          {chapters ? <ChaptersSection title="Chapters" chapters={chapters} /> : null}
-          {collections ? <CollectionSection title="Collections" collections={collections} /> : null}
+          <Sections data={data} />
         </div>
         <div className="danger-zone">
           <a className="reset" onClick={handleResetClick}>

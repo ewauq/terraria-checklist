@@ -30,3 +30,17 @@ $color-red-light: rgb(255, 233, 233);
     @content;
   }
 }
+
+@mixin link-block {
+  color: $color-black-coal;
+  padding: $gap-small $gap-large;
+  display: flex;
+  align-items: center;
+  gap: $gap-tiny;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-gray-light;
+    text-decoration: none;
+  }
+}
