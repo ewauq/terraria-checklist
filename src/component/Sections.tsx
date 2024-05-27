@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDrawer } from '../context/DrawerContext'
 import { Chapter } from '../type/chapter'
 import { Collection } from '../type/collection'
@@ -10,8 +10,14 @@ interface SectionProps {
 }
 
 const Section = ({ data }: SectionProps): JSX.Element => {
-  const { selectedPage, setOpenDrawer, setSelectedPage } = useDrawer()
+  const [bounce, setBounce] = useState<boolean>(false)
+  const { selectedPage, checkedItem, setSelectedPage, setOpenDrawer } = useDrawer()
   const { chapters, collections } = data
+
+  useEffect(() => {
+    setBounce(true)
+    setTimeout(() => setBounce(false), 300)
+  }, [checkedItem])
 
   useEffect(() => {
     const slug = location.hash.replace('#', '')
@@ -53,6 +59,8 @@ const Section = ({ data }: SectionProps): JSX.Element => {
             if (selectedPage?.content?.id === chapter.id && selectedPage?.type === 'chapter') {
               linkClasses.push('active')
             }
+            const doBounce =
+              bounce && checkedItem?.pageType === 'chapter' && checkedItem?.pageId === chapter.id
 
             return (
               <a
@@ -62,7 +70,7 @@ const Section = ({ data }: SectionProps): JSX.Element => {
                 className={linkClasses.join(' ')}
               >
                 {chapter.label}
-                <span className="done-count">
+                <span className={`done-count ${doBounce ? 'bounce' : ''}`}>
                   ({doneItemsCount}/{itemsCount})
                 </span>
               </a>
@@ -86,6 +94,10 @@ const Section = ({ data }: SectionProps): JSX.Element => {
             ) {
               linkClasses.push('active')
             }
+            const doBounce =
+              bounce &&
+              checkedItem?.pageType === 'collection' &&
+              checkedItem?.pageId === collection.id
 
             return (
               <a
@@ -95,7 +107,7 @@ const Section = ({ data }: SectionProps): JSX.Element => {
                 className={linkClasses.join(' ')}
               >
                 {collection.label}
-                <span className="done-count">
+                <span className={`done-count ${doBounce ? 'bounce' : ''}`}>
                   ({doneItemsCount}/{itemsCount})
                 </span>
               </a>
