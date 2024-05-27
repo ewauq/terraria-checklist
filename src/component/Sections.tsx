@@ -80,7 +80,12 @@ const Section = ({ data }: SectionProps): JSX.Element => {
 
             let linkClasses = []
             if (doneItemsCount === itemsCount) linkClasses.push('done')
-            if (selectedPage?.content?.id === collection.id) linkClasses.push('active')
+            if (
+              selectedPage?.content?.id === collection.id &&
+              selectedPage?.type === 'collection'
+            ) {
+              linkClasses.push('active')
+            }
 
             return (
               <a
