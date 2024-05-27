@@ -6,10 +6,13 @@ import React, {
   useContext,
   useState,
 } from 'react'
+import { Page } from '../type/page'
 
 interface DrawerContextProps {
   openDrawer: boolean
   setOpenDrawer: Dispatch<SetStateAction<boolean>>
+  selectedPage: Page | null
+  setSelectedPage: Dispatch<SetStateAction<Page | null>>
 }
 
 const DrawerContext = createContext<DrawerContextProps | undefined>(undefined)
@@ -20,9 +23,10 @@ interface DrawerProviderProps {
 
 const DrawerProvider: React.FC<DrawerProviderProps> = ({ children }) => {
   const [openDrawer, setOpenDrawer] = useState<boolean>(false)
+  const [selectedPage, setSelectedPage] = useState<Page | null>(null)
 
   return (
-    <DrawerContext.Provider value={{ openDrawer, setOpenDrawer }}>
+    <DrawerContext.Provider value={{ openDrawer, setOpenDrawer, selectedPage, setSelectedPage }}>
       {children}
     </DrawerContext.Provider>
   )

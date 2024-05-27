@@ -1,29 +1,28 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
+import { useDrawer } from '../context/DrawerContext'
 import { Chapter } from '../type/chapter'
+import { CheckedItem } from '../type/checked-item'
 import { Page } from '../type/page'
 
 interface ChaptersSectionProps {
   title: string
   chapters: Chapter[]
   onPageSelected: (page: Page) => void
+  checkedItem: CheckedItem
 }
 
-const ChaptersSection = ({
-  title,
-  chapters,
-  onPageSelected,
-}: ChaptersSectionProps): JSX.Element => {
-  const [currentPage, setCurrentPage] = useState<number | null>(null)
+const ChaptersSection = ({ title, chapters }: ChaptersSectionProps): JSX.Element => {
+  const { selectedPage, setSelectedPage } = useDrawer()
 
   useEffect(() => {
     const slug = location.hash.replace('#', '')
+    if (!slug) setSelectedPage(null)
     const chapter = chapters.find((chapter) => chapter.slug === slug)
-    if (chapter) setCurrentPage(chapter.id)
+    if (chapter) setSelectedPage({ type: 'chapter', content: chapter })
   }, [chapters])
 
   const handleChapterClick = (chapter: Chapter): void => {
-    onPageSelected({ type: 'chapter', content: chapter })
-    setCurrentPage(chapter.id)
+    setSelectedPage({ type: 'chapter', content: chapter })
   }
 
   const getDoneItemsCount = (chapterId: number): number => {
@@ -44,7 +43,7 @@ const ChaptersSection = ({
 
           let linkClasses = []
           if (doneItemsCount === itemsCount) linkClasses.push('done')
-          if (currentPage === chapter.id) linkClasses.push('active')
+          if (selectedPage?.content?.id === chapter.id) linkClasses.push('active')
 
           return (
             <a
