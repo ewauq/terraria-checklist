@@ -9,7 +9,7 @@ const LAST_BUILD_DATE = __BUILD_DATE__
 
 const Drawer = (): JSX.Element => {
   const data = useDatabase()
-  const { openDrawer, setOpenDrawer } = useDrawer()
+  const { openDrawer, setOpenDrawer, setSelectedPage } = useDrawer()
 
   if (!data) return <></>
   const { chapters } = data
@@ -17,11 +17,11 @@ const Drawer = (): JSX.Element => {
   const handleResetClick = (): void => {
     const confirmation = confirm('Are you sure you want to reset your progression?')
     if (!confirmation) return
-    localStorage.clear()
 
-    if (chapters) location.href = `#${chapters[0].slug}`
-    location.reload()
+    setSelectedPage({ type: 'chapter', content: chapters[0] })
     window.scrollTo(0, 0)
+    localStorage.clear()
+    location.reload()
   }
 
   const handleOverlayClick = (): void => {
