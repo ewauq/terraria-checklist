@@ -8,7 +8,7 @@ interface CollectionsSectionProps {
   onPageSelected: (page: Page) => void
 }
 
-const Collections = ({
+const CollectionSection = ({
   title,
   collections,
   onPageSelected,
@@ -65,4 +65,4 @@ const Collections = ({
     </section>
   )
 }
-export default Collections
+export default CollectionSection

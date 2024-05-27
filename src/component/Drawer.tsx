@@ -2,7 +2,7 @@ import React from 'react'
 import { useDatabase } from '../context/DatabaseContext'
 import { useDrawer } from '../context/DrawerContext'
 import ChaptersSection from './ChaptersSection'
-import Collections from './CollectionsSection'
+import CollectionSection from './CollectionsSection'
 import './Drawer.scss'
 
 // @ts-ignore
@@ -45,7 +45,7 @@ const Drawer = (): JSX.Element => {
             Home
           </a>
           {chapters ? <ChaptersSection title="Chapters" chapters={chapters} /> : null}
-          {collections ? <Collections title="Collections" collections={collections} /> : null}
+          {collections ? <CollectionSection title="Collections" collections={collections} /> : null}
         </div>
         <div className="danger-zone">
           <a className="reset" onClick={handleResetClick}>
