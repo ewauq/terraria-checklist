@@ -19,9 +19,9 @@ const Drawer = (): JSX.Element => {
     if (!confirmation) return
 
     setSelectedPage({ type: 'chapter', content: chapters[0] })
+    document.location = `#${chapters[0].slug}`
     window.scrollTo(0, 0)
     localStorage.clear()
-    location.reload()
   }
 
   const handleOverlayClick = (): void => {
