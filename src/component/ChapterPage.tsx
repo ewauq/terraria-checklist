@@ -5,10 +5,9 @@ import Line from './Line'
 
 interface ChapterPageProps {
   page: Chapter | null | undefined
-  onItemChecked: (localStorageKeyValue: string) => void
 }
 
-const ChapterPage = ({ page, onItemChecked }: ChapterPageProps): JSX.Element => {
+const ChapterPage = ({ page }: ChapterPageProps): JSX.Element => {
   return (
     <div className="page">
       <div className="cover" style={{ background: page?.background }}>
@@ -17,15 +16,7 @@ const ChapterPage = ({ page, onItemChecked }: ChapterPageProps): JSX.Element => 
       <div className="content chapter">
         {page?.items.map((item, index) => {
           if (typeof item === 'string') return <ChapterCategory key={index} title={item} />
-          return (
-            <Line
-              key={index}
-              pageId={page.id}
-              id={item.id}
-              text={item.text}
-              onItemChecked={onItemChecked}
-            />
-          )
+          return <Line key={index} pageId={page.id} id={item.id} text={item.text} />
         })}
       </div>
       {page?.note && <div className="notes">{page.note}</div>}

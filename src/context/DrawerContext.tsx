@@ -6,6 +6,7 @@ import React, {
   useContext,
   useState,
 } from 'react'
+import { CheckedItem } from '../type/checked-item'
 import { Page } from '../type/page'
 
 interface DrawerContextProps {
@@ -13,6 +14,8 @@ interface DrawerContextProps {
   setOpenDrawer: Dispatch<SetStateAction<boolean>>
   selectedPage: Page | null
   setSelectedPage: Dispatch<SetStateAction<Page | null>>
+  checkedItem: CheckedItem | null
+  setCheckedItem: Dispatch<SetStateAction<CheckedItem | null>>
 }
 
 const DrawerContext = createContext<DrawerContextProps | undefined>(undefined)
@@ -24,9 +27,19 @@ interface DrawerProviderProps {
 const DrawerProvider: React.FC<DrawerProviderProps> = ({ children }) => {
   const [openDrawer, setOpenDrawer] = useState<boolean>(false)
   const [selectedPage, setSelectedPage] = useState<Page | null>(null)
+  const [checkedItem, setCheckedItem] = useState<CheckedItem | null>(null)
 
   return (
-    <DrawerContext.Provider value={{ openDrawer, setOpenDrawer, selectedPage, setSelectedPage }}>
+    <DrawerContext.Provider
+      value={{
+        openDrawer,
+        setOpenDrawer,
+        selectedPage,
+        setSelectedPage,
+        checkedItem,
+        setCheckedItem,
+      }}
+    >
       {children}
     </DrawerContext.Provider>
   )

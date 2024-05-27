@@ -1,18 +1,14 @@
 import React, { useEffect } from 'react'
 import { useDrawer } from '../context/DrawerContext'
 import { Chapter } from '../type/chapter'
-import { CheckedItem } from '../type/checked-item'
-import { Page } from '../type/page'
 
 interface ChaptersSectionProps {
   title: string
   chapters: Chapter[]
-  onPageSelected: (page: Page) => void
-  checkedItem: CheckedItem
 }
 
 const ChaptersSection = ({ title, chapters }: ChaptersSectionProps): JSX.Element => {
-  const { selectedPage, setSelectedPage } = useDrawer()
+  const { selectedPage, setOpenDrawer, setSelectedPage } = useDrawer()
 
   useEffect(() => {
     const slug = location.hash.replace('#', '')
@@ -23,6 +19,8 @@ const ChaptersSection = ({ title, chapters }: ChaptersSectionProps): JSX.Element
 
   const handleChapterClick = (chapter: Chapter): void => {
     setSelectedPage({ type: 'chapter', content: chapter })
+    window.scrollTo(0, 0)
+    setOpenDrawer(false)
   }
 
   const getDoneItemsCount = (chapterId: number): number => {

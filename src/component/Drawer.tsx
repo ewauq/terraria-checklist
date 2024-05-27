@@ -1,8 +1,6 @@
 import React from 'react'
 import { useDatabase } from '../context/DatabaseContext'
 import { useDrawer } from '../context/DrawerContext'
-import { CheckedItem } from '../type/checked-item'
-import { Page } from '../type/page'
 import ChaptersSection from './ChaptersSection'
 import Collections from './CollectionsSection'
 import './Drawer.scss'
@@ -10,13 +8,9 @@ import './Drawer.scss'
 // @ts-ignore
 const LAST_BUILD_DATE = __BUILD_DATE__
 
-interface DrawerProps {
-  checkedItem: CheckedItem
-}
-
-const Drawer = ({ checkedItem }: DrawerProps): JSX.Element => {
+const Drawer = (): JSX.Element => {
   const database = useDatabase()
-  const { openDrawer, setOpenDrawer, setSelectedPage } = useDrawer()
+  const { openDrawer, setOpenDrawer } = useDrawer()
 
   if (!database) return <></>
   const { chapters, collections } = database
@@ -29,12 +23,6 @@ const Drawer = ({ checkedItem }: DrawerProps): JSX.Element => {
     if (chapters) location.href = `#${chapters[0].slug}`
     location.reload()
     window.scrollTo(0, 0)
-  }
-
-  const handlePageSelected = (page: Page): void => {
-    setSelectedPage({ type: page.type, content: page.content })
-    window.scrollTo(0, 0)
-    setOpenDrawer(false)
   }
 
   const handleOverlayClick = (): void => {
@@ -56,22 +44,8 @@ const Drawer = ({ checkedItem }: DrawerProps): JSX.Element => {
           <a href="index.html" className="home">
             Home
           </a>
-          {chapters ? (
-            <ChaptersSection
-              title="Chapters"
-              chapters={chapters}
-              onPageSelected={handlePageSelected}
-              checkedItem={checkedItem}
-            />
-          ) : null}
-          {collections ? (
-            <Collections
-              title="Collections"
-              collections={collections}
-              onPageSelected={handlePageSelected}
-              checkedItem={checkedItem}
-            />
-          ) : null}
+          {chapters ? <ChaptersSection title="Chapters" chapters={chapters} /> : null}
+          {collections ? <Collections title="Collections" collections={collections} /> : null}
         </div>
         <div className="danger-zone">
           <a className="reset" onClick={handleResetClick}>
