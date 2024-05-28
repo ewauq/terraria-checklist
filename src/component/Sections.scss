@@ -1,0 +1,41 @@
+.sections {
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.6);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  h3 {
+    margin: $gap-large 0 $gap-small $gap-large;
+    font-size: 18px;
+  }
+
+  a {
+    @include link-block;
+
+    .done-count {
+      color: $color-black-coal-light;
+      font-size: $small-font-size;
+      &.bounce {
+        animation: bounce 300ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      }
+    }
+    &.active {
+      background-color: $color-gray-light;
+      font-weight: bold;
+    }
+
+    &.done {
+      .done-count {
+        color: $color-green-dark;
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -1,16 +1,37 @@
 .drawer {
   display: none;
-  margin-right: -$drawer-width;
-  background-color: white;
-  padding: $gap-large;
 
+  margin-right: -$drawer-width-mobile;
+  min-width: $drawer-width-mobile;
+
+  background-color: white;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.05);
 
+  z-index: 9;
+  padding-bottom: $gap-large;
+
+  font-size: $small-font-size;
+
   @mixin opened {
     display: block;
-    min-width: $drawer-width;
-    z-index: 9;
+  }
+
+  @include desktop {
+    margin-right: 0;
+    font-size: $global-font-size;
+    min-width: $drawer-width-desktop;
+    @include opened;
+  }
+
+  @mixin ornament($icon) {
+    vertical-align: top;
+    opacity: 0.7;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    content: ' ';
+    background: url('../image/icon/#{$icon}.svg') no-repeat center center;
   }
 
   &.open {
@@ -19,120 +40,89 @@
 
   .logo {
     display: none;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid $color-gray-light;
     padding-bottom: 20px;
     margin-bottom: 20px;
     gap: $gap-small;
+    margin: $gap-large;
 
     @include desktop {
       display: flex;
     }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      font-family: $big-text-font-family;
+      text-transform: uppercase;
+      justify-content: center;
+      gap: $gap-small;
+
+      span {
+        font-size: 26px;
+        line-height: 20px;
+      }
+    }
   }
 
-  .logo-text {
-    display: flex;
-    flex-direction: column;
-    font-family: $big-text-font-family;
-    text-transform: uppercase;
-    justify-content: center;
-    gap: $gap-small;
+  .danger-zone {
+    margin: $gap-large 0 $gap-large 0;
 
-    span {
-      font-size: 26px;
-      line-height: 20px;
+    @mixin strip {
+      content: ' ';
+      height: 6px;
+      display: block;
+      background-image: url('../image/icon/strips.png');
+    }
+
+    &::before,
+    &::after {
+      @include strip;
+    }
+
+    a.reset {
+      @include link-block;
+      margin: $gap-small 0;
+
+      &::before {
+        @include ornament('reset');
+      }
+
+      &:hover {
+        background-color: $color-red-light;
+        color: $color-red;
+      }
+    }
+  }
+
+  a.home {
+    margin-top: $gap-large;
+    &::before {
+      @include ornament('home');
     }
   }
 
   .diminished {
+    margin: 0 $gap-large;
     color: $color-black-coal-light;
     font-size: 13px;
   }
+}
 
-  .separator {
-    height: 1px;
-    line-height: 1px;
-    width: 100%;
-    background-color: #eeeeee;
-    margin: 20px 0;
-  }
+.overlay {
+  display: none;
+  background-color: $color-black-coal-light;
+  z-index: 8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
-  hr {
-    height: 1px;
-    line-height: 1px;
-    width: 100%;
-    background-color: #eeeeee;
-    border: 0;
-    margin: 20px 0;
-  }
-
-  a.reset {
-    display: inline-block;
-    color: $color-black-coal;
-    cursor: pointer;
-    &::before {
-      vertical-align: top;
-      opacity: 0.7;
-      display: inline-block;
-      width: 24px;
-      height: 24px;
-      content: ' ';
-      background: url('../image/icon/reset.svg') no-repeat center center;
-      margin-right: 5px;
+  &.show {
+    display: block;
+    @include desktop {
+      display: none;
     }
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  .sections {
-    a {
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      text-decoration: none;
-      cursor: pointer;
-      color: $color-black-coal;
-      &:hover {
-        text-decoration: underline;
-      }
-      &.done {
-        color: $color-black-coal;
-        background-color: #c9ecd8;
-        .done-count {
-          font-weight: bold;
-          color: green;
-        }
-      }
-      .done-count {
-        color: $color-black-coal-light;
-      }
-    }
-
-    h3 {
-      margin-top: $gap-large;
-      margin-bottom: $gap-small;
-      font-size: 18px;
-    }
-
-    .chapters {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      font-size: 15px;
-      gap: $gap-medium;
-      a {
-        display: inline;
-      }
-    }
-  }
-
-  @include desktop {
-    margin-right: 0;
-    @include opened;
-  }
-
-  @if ($DEBUG) {
-    border: 2px solid blue;
-    background-color: rgb(223, 223, 255);
   }
 }

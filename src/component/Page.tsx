@@ -9,17 +9,17 @@ import './Page.scss'
 
 interface PageProps {
   page: PageType | null | undefined
-  onItemChecked: (localStorageKeyValue: string) => void
 }
 
-const Page = ({ page, onItemChecked }: PageProps): JSX.Element => {
-  if (page?.type === 'chapter') {
-    return <ChapterPage page={page.content as Chapter} onItemChecked={onItemChecked} />
-  }
-
-  if (page?.type === 'collection') {
-    return <CollectionPage page={page.content as Collection} onItemChecked={onItemChecked} />
-  }
+const Page = ({ page }: PageProps): JSX.Element => {
+  if (page?.type === 'chapter') return <ChapterPage page={page.content as Chapter} />
+  if (page?.type === 'collection')
+    return (
+      <CollectionPage
+        page={page.content as Collection}
+        onItemChecked={(item) => console.log(item)}
+      />
+    )
 
   return <HomePage />
 }

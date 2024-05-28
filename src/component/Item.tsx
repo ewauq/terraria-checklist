@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { useDrawer } from '../context/DrawerContext'
 import './Item.scss'
 
 enum CollectionType {
@@ -15,18 +16,18 @@ type Item = {
 interface ItemProps {
   item: Item
   collectionId: CollectionType
-  onItemChecked: (localStorageKeyValue: string) => void
 }
 
-const Item = ({ item, collectionId, onItemChecked }: ItemProps): JSX.Element => {
+const Item = ({ item, collectionId }: ItemProps): JSX.Element => {
   const [isChecked, setIsChecked] = React.useState<boolean>(false)
+  const { setCheckedItem } = useDrawer()
   const localStorageKey = `collection-${collectionId}-item-${item.id}`
 
   const handleItemClick = (): void => {
     const state = !isChecked
     localStorage.setItem(localStorageKey, state.toString())
     setIsChecked(state)
-    onItemChecked(`${localStorageKey}-${state.toString()}`)
+    setCheckedItem({ pageType: 'collection', pageId: collectionId, itemId: item.id, state })
   }
 
   useEffect(() => {
