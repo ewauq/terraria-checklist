@@ -13,13 +13,7 @@ interface PageProps {
 
 const Page = ({ page }: PageProps): JSX.Element => {
   if (page?.type === 'chapter') return <ChapterPage page={page.content as Chapter} />
-  if (page?.type === 'collection')
-    return (
-      <CollectionPage
-        page={page.content as Collection}
-        onItemChecked={(item) => console.log(item)}
-      />
-    )
+  if (page?.type === 'collection') return <CollectionPage page={page.content as Collection} />
 
   return <HomePage />
 }
