@@ -65,6 +65,19 @@
     }
   }
 
+  .support-link {
+    border-radius: 8px;
+    padding: $gap-medium $gap-large;
+    display: flex;
+    margin: $gap-large;
+    width: 70%;
+    margin: $gap-large auto;
+
+    &:hover {
+      background-color: #ffdd00;
+    }
+  }
+
   .danger-zone {
     margin: $gap-large 0 $gap-large 0;
 
