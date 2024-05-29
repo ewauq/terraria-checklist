@@ -55,3 +55,7 @@ The app is available at https://ewauq.github.io/terraria-checklist/
 * Artwork by [Vsewolod](https://www.deviantart.com/vsewolod/art/Terraria-World-730563825)
 * UI Icons by [Google](https://fonts.google.com/icons)
 * Game sprites by [Terraria Official Wiki](https://terraria.wiki.gg/wiki/Terraria_Wiki)
+
+## Support & donations
+* ☕ [Buy me a Coffee support page](https://buymeacoffee.com/ewauq)
+* 📣 Send me your feedback or just say hello at terrariachecklist@pm.me
