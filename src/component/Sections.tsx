@@ -39,7 +39,7 @@ const Section = ({ data }: SectionProps): JSX.Element => {
 
   const getDoneItemsCount = (type: 'chapter' | 'collection', elementId: number): number => {
     const chapterItems = Object.keys(localStorage).filter((key) =>
-      key.startsWith(`${type}-${elementId}`),
+      key.startsWith(`${type}-${elementId}-`),
     )
     const doneItems = chapterItems.filter((key) => localStorage.getItem(key) === 'true')
     return doneItems.length
