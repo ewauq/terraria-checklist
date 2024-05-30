@@ -1,4 +1,4 @@
-![Terraria Progression Logo](https://raw.githubusercontent.com/ewauq/terraria-checklist/main/doc/logo.png)
+![Terraria Progression Logo](https://raw.githubusercontent.com/ewauq/ewauq.github.io/master/terraria-checklist/image/external/opengraph-cover.jpeg)
 
 # Terraria Progression Checklist
 > The Complete Cheat Sheet Walkthrough
