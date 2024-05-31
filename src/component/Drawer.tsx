@@ -55,8 +55,11 @@ const Drawer = (): JSX.Element => {
           <img src="image/icon/bmc-full-logo.svg" />
         </a>
 
-        <div className="diminished">Game version 1.4.4.9</div>
-        <div className="diminished">Last update on {LAST_BUILD_DATE}</div>
+        <div className="diminished">
+          Updated on {LAST_BUILD_DATE} (
+          <a href="https://ewauq.github.io/terraria-checklist/v1">change version</a>)
+        </div>
+        <div className="diminished">Ready for Terraria 1.4.4.9</div>
         <div className="diminished">
           Code by{' '}
           <a href="https://github.com/ewauq/terraria-checklist" target="_blank">
